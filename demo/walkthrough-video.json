@@ -1,0 +1,32 @@
+{
+  "voice": "macOS Samantha (synthetic)",
+  "cloud_status": "Destroyed; runtime footage is historical",
+  "seconds": 786.544609,
+  "sections": [
+    {
+      "section": "Updated ten-slide presentation",
+      "starts_at_seconds": 0.0,
+      "seconds": 318.096417
+    },
+    {
+      "section": "Historical evidence disclosure",
+      "starts_at_seconds": 318.096,
+      "seconds": 22.52
+    },
+    {
+      "section": "Actual recorded CI and cloud walkthrough",
+      "starts_at_seconds": 340.616,
+      "seconds": 355.24
+    },
+    {
+      "section": "Actual corrected monitoring evidence",
+      "starts_at_seconds": 695.856,
+      "seconds": 60.488163
+    },
+    {
+      "section": "Final cleanup result",
+      "starts_at_seconds": 756.345,
+      "seconds": 30.2
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "voice": "macOS Samantha",
+  "rate": 165,
+  "seconds": 318.096417,
+  "slides": [
+    {
+      "slide": 1,
+      "title": "CampusDesk: support across campus",
+      "seconds": 26.857778,
+      "narration": "CampusDesk tracks technology problems across classrooms, labs and campus accounts. Its distinct workflow requires a campus location and classifies tickets as hardware, software, network, account or other. That information helps the support team understand where the incident happened and who should handle it. The project shares an openly credited foundation with ResolveDesk; it is not presented as independently written from scratch."
+    },
+    {
+      "slide": 2,
+      "title": "From a lab incident to a resolution",
+      "seconds": 28.493515,
+      "narration": "The example I will demonstrate is a projector losing its HDMI signal in Science block, Lab three hundred and one. A ticket records the requester, location, category, priority and assigned support team. It moves from Open to In progress to Resolved. Search includes category and location, so a technician can quickly find incidents in a particular lab. This classroom demo uses synthetic data, has no authentication and does not send email."
+    },
+    {
+      "slide": 3,
+      "title": "Campus fields have their own contract",
+      "seconds": 30.339501,
+      "narration": "The implementation separates the interface, validation, workflow operations and storage. The React form collects the campus fields, and the table displays them. Pydantic validates the category and requires a nonblank location. Route handlers call service functions, and SQLAlchemy writes the data to PostgreSQL. Alembic migration zero zero zero three adds the campus fields without deleting existing tickets. Tests cover these additions as well as the shared workflow."
+    },
+    {
+      "slide": 4,
+      "title": "One shared cluster, separate campus data",
+      "seconds": 33.77805,
+      "narration": "The browser talks to the React and Nginx frontend, which forwards API requests to FastAPI. The API uses PostgreSQL. Locally, Compose runs the same three services. The application is on port three thousand and two, and the API is on eight thousand and one. During the recorded AWS deployment, CampusDesk shared one EKS cluster with ResolveDesk, but used the campusdesk namespace and separate database credentials and storage. GitHub Actions tested and published images, and ArgoCD applied the release recorded in Git."
+    },
+    {
+      "slide": 5,
+      "title": "A tested image reaches the registry",
+      "seconds": 31.282902,
+      "narration": "Thirty-one backend tests and four frontend tests passed. The pipeline also built the production frontend. It built commit-tagged container images, blocked high and critical Trivy findings, loaded the scanned images into a temporary Kind cluster and smoke-tested the Helm deployment before publishing to GHCR. The final published baseline run is three eight nine zero six two one three four six eight, for commit one b d four eight nine six seven. I will open that completed run rather than describe an old result as a new push."
+    },
+    {
+      "slide": 6,
+      "title": "Quota recovery changed the network plan",
+      "seconds": 36.6,
+      "narration": "The first design used private workers and a NAT gateway, but the account had exhausted its regional Elastic IP quota. The approved temporary recovery used public-subnet workers, blocked unsolicited public inbound traffic and restricted the Kubernetes API to the operator address. The replacement workers successfully served both applications. However, the failed original node group took too long to disappear. The recovery Terraform apply was gracefully interrupted while waiting for that deletion. I am not calling that apply a clean success; the working runtime and the later successful destroy are documented separately."
+    },
+    {
+      "slide": 7,
+      "title": "The campus workload was verified",
+      "seconds": 32.16,
+      "narration": "The recorded Kubernetes evidence shows two backend replicas, two frontend replicas and a completed migration Job. PostgreSQL had its own bound five-gigabyte volume in the campusdesk namespace. Probes, resource limits and the horizontal pod autoscaler were configured, and CPU metrics were available. This proves what ran during that session. The cluster no longer exists today, so the default demonstration uses the local application and the saved cloud evidence rather than trying to run kubectl against a deleted cluster."
+    },
+    {
+      "slide": 8,
+      "title": "GitOps was more than a YAML file",
+      "seconds": 29.36,
+      "narration": "ArgoCD read the CampusDesk Helm chart and release values from Git. Its recorded state was Synced and Healthy, with a successful operation. The deployed images used the verified nine a seven a one eight four tag. Later documentation commits did not automatically change that selected application release. The configuration also ignores the backend replica count when comparing desired state, so ArgoCD does not undo scaling decisions made by the horizontal pod autoscaler."
+    },
+    {
+      "slide": 9,
+      "title": "Check actual metrics, not assumptions",
+      "seconds": 31.0,
+      "narration": "Prometheus recorded both CampusDesk API endpoints as up. The Grafana dashboard contains actual request-rate and ninety-fifth-percentile latency samples selected from the campusdesk namespace. The server-error panel had no matching series, which is different from measuring a zero error rate. A monitoring pod restart invalidated the earlier Grafana login, so the walkthrough uses a fresh authenticated dashboard recording. Installing a chart or dashboard file alone would not prove any of these runtime results."
+    },
+    {
+      "slide": 10,
+      "title": "Delivery finished with a cleanup audit",
+      "seconds": 38.201451,
+      "narration": "The completed delivery includes thirty-one backend tests, four frontend tests, browser and mobile checks, PostgreSQL integration checks, a slide deck and a narrated walkthrough. The shared Terraform destroy removed fifty-nine resources, and all eleven scoped cleanup checks passed. The owned KMS key is scheduled for deletion on the fifteenth of November, twenty twenty-six, because AWS requires a waiting period. That is recorded separately from the removed compute and network resources. The local demonstration remains available. A production service would still need authentication, backups and a recovery plan."
+    }
+  ]
+}

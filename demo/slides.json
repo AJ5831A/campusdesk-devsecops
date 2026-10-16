@@ -92,7 +92,7 @@
     "subtitle": "Final results and limits",
     "points": [
       "31 backend tests, four frontend tests, browser/mobile checks and PostgreSQL smoke passed.",
-      "A ten-slide deck and a recorded 11m38s walkthrough document the delivery.",
+      "A ten-slide deck and a narrated walkthrough document the delivery.",
       "Shared Terraform destroy removed 59 resources; all 11 scoped cleanup checks passed.",
       "The owned KMS key is PendingDeletion until 15 November 2026 under AWS rules.",
       "Local demo remains available. Production would need authentication, backups and recovery planning."

@@ -2,7 +2,7 @@
 
 Prepared for Aryan (AJ5831A). Estimated delivery: 15–20 minutes. This script is for the updated ten-slide CampusDesk deck. It credits the shared ResolveDesk foundation and AI assistance.
 
-**Current state:** the AWS cluster has been destroyed. The default demonstration below uses the running local application and clearly labelled recorded cloud evidence. It does not require AWS login or create billable resources. The existing video records the earlier real cloud session; the updated slides include final cleanup results that became available afterward.
+**Current state:** the AWS cluster has been destroyed. The default demonstration below uses the running local application and clearly labelled recorded cloud evidence. It does not require AWS login or create billable resources. The updated video combines the latest slides with actual earlier cloud footage and a final cleanup summary. Its voice is the synthetic macOS Samantha voice, not Aryan’s own recording.
 
 ## Before presenting
 
@@ -103,7 +103,7 @@ docker compose ps
 
 **Say:**
 
-> The completed delivery includes thirty-one backend tests, four frontend tests, browser and mobile checks, PostgreSQL integration checks, a slide deck and an eleven-minute-thirty-eight-second recorded walkthrough. The shared Terraform destroy removed fifty-nine resources, and all eleven scoped cleanup checks passed. The owned KMS key is scheduled for deletion on the fifteenth of November, twenty twenty-six, because AWS requires a waiting period. That is recorded separately from the removed compute and network resources. The local demonstration remains available. A production service would still need authentication, backups and a recovery plan.
+> The completed delivery includes thirty-one backend tests, four frontend tests, browser and mobile checks, PostgreSQL integration checks, a slide deck and a narrated walkthrough. The shared Terraform destroy removed fifty-nine resources, and all eleven scoped cleanup checks passed. The owned KMS key is scheduled for deletion on the fifteenth of November, twenty twenty-six, because AWS requires a waiting period. That is recorded separately from the removed compute and network resources. The local demonstration remains available. A production service would still need authentication, backups and a recovery plan.
 
 ## Demonstration 1 — Create a real local campus ticket
 

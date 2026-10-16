@@ -2,4 +2,4 @@ CampusDesk presenter guide
 
 Use demo/demo-script.md or the printable demo/demo-script.pdf for exact current slide narration, clicks, commands and evidence links. The AWS environment has already been destroyed. The default guide demonstrates the local application and clearly labelled recorded cloud evidence.
 
-The existing demo/walkthrough.mp4 preserves the earlier real cloud session, with synthetic narration disclosed. Its slide revision predates the new final-results deck. Do not follow old port-forward or AWS-live steps as if the cluster still exists.
+The updated demo/walkthrough.mp4 combines the final-results slide deck with the earlier real cloud footage and a cleanup closing. Narration uses the synthetic macOS Samantha voice. Do not follow old port-forward or AWS-live steps as if the cluster still exists.
