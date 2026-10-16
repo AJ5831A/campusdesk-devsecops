@@ -9,10 +9,10 @@ helm upgrade --install kube-prometheus-stack prometheus-community/kube-prometheu
   --namespace monitoring --create-namespace \
   -f monitoring/prometheus-values.yaml -f monitoring/grafana-values.yaml \
   --wait --timeout 10m
-kubectl create configmap resolvedesk-dashboard -n monitoring \
-  --from-file=resolvedesk.json=monitoring/resolvedesk-dashboard.json \
+kubectl create configmap campusdesk-dashboard -n monitoring \
+  --from-file=campusdesk.json=monitoring/resolvedesk-dashboard.json \
   --dry-run=client -o yaml | kubectl apply -f -
-kubectl label configmap resolvedesk-dashboard -n monitoring grafana_dashboard=1 --overwrite
+kubectl label configmap campusdesk-dashboard -n monitoring grafana_dashboard=1 --overwrite
 helm upgrade resolvedesk helm/resolvedesk -n campusdesk --reuse-values \
   --set monitoring.serviceMonitor.enabled=true --wait --wait-for-jobs
 ```
