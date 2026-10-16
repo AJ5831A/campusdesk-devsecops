@@ -10,7 +10,7 @@ from reportlab.pdfgen.canvas import Canvas
 
 ROOT = Path(__file__).resolve().parents[1]
 NAVY = "102A43"
-TEAL = "087F8C"
+TEAL = "6554A4"
 WHITE = "FFFFFF"
 GRAY = "536879"
 

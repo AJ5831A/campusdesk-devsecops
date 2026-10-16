@@ -1,105 +1,101 @@
 [
   {
-    "title": "CampusDesk",
-    "subtitle": "A campus IT helpdesk application with a reproducible DevSecOps delivery path",
+    "title": "CampusDesk: support across campus",
+    "subtitle": "Aryan / AJ5831A / campus IT demonstration",
     "points": [
-      "Create, assign, prioritize and resolve support tickets.",
-      "React interface, FastAPI services and persistent PostgreSQL storage.",
-      "Prepared for Aryan (AJ5831A). Shared ResolveDesk foundation is credited; campus fields add a distinct workflow."
+      "Track classroom, lab and account incidents with a required campus location.",
+      "Classify requests as hardware, software, network, account or other.",
+      "Shared ResolveDesk foundation and AI assistance are credited explicitly."
     ]
   },
   {
-    "title": "A small workflow, implemented end to end",
-    "subtitle": "Project overview",
+    "title": "From a lab incident to a resolution",
+    "subtitle": "A distinct campus workflow",
     "points": [
-      "Requester email, category and required campus location stay with each ticket.",
-      "The workflow is OPEN \u2192 IN_PROGRESS \u2192 RESOLVED; teams can reopen tickets.",
-      "Search and filters help triage; summary counts expose unresolved urgent work.",
-      "Assumption: an internal classroom demonstration with synthetic data and no authentication."
+      "Example: projector loses HDMI signal in Science block, Lab 301.",
+      "Capture requester, location, category, priority and assigned support team.",
+      "Move Open to In progress to Resolved; search by location or category.",
+      "Demonstration data is synthetic. The application has no authentication or email delivery."
     ]
   },
   {
-    "title": "Separate responsibilities",
-    "subtitle": "Technology and code structure",
+    "title": "Campus fields have their own contract",
+    "subtitle": "Modular implementation",
     "points": [
-      "React + Vite: ticket workspace, forms and accessible feedback.",
-      "FastAPI: HTTP routes; service functions: workflow operations; Pydantic: validation.",
-      "SQLAlchemy + PostgreSQL: storage. Alembic: explicit schema migrations.",
-      "Docker Compose: local integration. Helm + Kubernetes: repeatable deployment."
+      "TicketForm and TicketTable collect and show category and location.",
+      "Pydantic requires location and validates the category enum; partial updates reject nulls.",
+      "Routes call service functions; SQLAlchemy stores the ticket in PostgreSQL.",
+      "Migration 0003 adds campus fields without deleting existing ticket history."
     ]
   },
   {
-    "title": "One application, two delivery paths",
-    "subtitle": "Architecture",
+    "title": "One shared cluster, separate campus data",
+    "subtitle": "Architecture and deployment boundaries",
     "diagram": true,
     "points": [
-      "Local: Compose connects the same three application services.",
-      "AWS: Terraform creates the VPC and EKS; Helm defines the workload."
+      "Local Compose: browser 3002, API 8001, private PostgreSQL service.",
+      "Recorded EKS: namespace campusdesk, separate Secret and persistent database."
     ]
   },
   {
-    "title": "Test before publication",
-    "subtitle": "Continuous integration and security",
+    "title": "A tested image reaches the registry",
+    "subtitle": "Verified continuous integration",
     "points": [
-      "GitHub Actions runs backend tests, frontend tests and a production frontend build.",
-      "Build each image once and tag it with the source commit SHA.",
-      "Trivy blocks HIGH and CRITICAL findings and preserves scan reports.",
-      "Deploy scanned images to temporary Kind, smoke-test them, then publish to GHCR."
+      "31 backend tests and four frontend tests passed; the production frontend build passed.",
+      "Commit-SHA images passed the Trivy HIGH/CRITICAL gate before publication.",
+      "The same images passed Helm deployment and HTTP smoke checks in temporary Kind.",
+      "Final published baseline CI run 38906213468 passed at commit 1bd48967."
     ]
   },
   {
-    "title": "Make infrastructure reproducible",
-    "subtitle": "Terraform and AWS",
+    "title": "Quota recovery changed the network plan",
+    "subtitle": "Terraform and the actual AWS result",
     "points": [
-      "Shared VPC spans two availability zones; CampusDesk has its own Kubernetes namespace.",
-      "Temporary EKS workers use public subnets after the account Elastic IP quota blocked NAT creation.",
-      "Security groups permit no public inbound access; the Kubernetes API is limited to the operator /32.",
-      "EBS CSI receives a dedicated IAM role for persistent volumes.",
-      "Capture the recovery and deployment proof, then destroy the shared temporary resources."
+      "The regional Elastic IP quota blocked the initial private-worker/NAT plan.",
+      "Approved recovery used public-subnet workers with no public inbound access and API /32.",
+      "Replacement workers served both applications; the old failed node group delayed removal.",
+      "Recovery apply was gracefully interrupted during deletion; it was not a clean successful apply."
     ]
   },
   {
-    "title": "Deploy and recover predictably",
-    "subtitle": "Kubernetes and Helm",
+    "title": "The campus workload was verified",
+    "subtitle": "Kubernetes, storage and scaling",
     "points": [
-      "Frontend and backend Deployments use probes, resource requests and limits.",
-      "A database StatefulSet uses persistent storage; credentials come from a Secret.",
-      "A migration Job applies Alembic before the application is considered ready.",
-      "HPA adjusts backend replicas; an Ingress can provide a single application endpoint.",
-      "Runtime evidence must show the actual pods, services, storage and health state."
+      "Recorded proof shows two API replicas, two frontend replicas and a completed migration Job.",
+      "PostgreSQL used its own bound 5 GiB volume in namespace campusdesk.",
+      "Readiness, liveness, resource limits and HPA were configured; metrics were available.",
+      "The cloud cluster has since been destroyed. Today use local UI and recorded cloud evidence."
     ]
   },
   {
-    "title": "Git records the desired release",
-    "subtitle": "ArgoCD and GitOps",
+    "title": "GitOps was more than a YAML file",
+    "subtitle": "ArgoCD evidence",
     "points": [
-      "ArgoCD reads the Helm chart and release values from Git.",
-      "Commit-SHA image tags connect a deployed release to its tested source.",
-      "A values change updates the desired state; ArgoCD reconciles the cluster.",
-      "Show Synced and Healthy states, then demonstrate a controlled release update.",
-      "A configured Application alone is not proof of a successful synchronization."
+      "ArgoCD tracked the CampusDesk repository and Helm release values.",
+      "The recorded application reached Synced, Healthy and Succeeded.",
+      "Deployed images used the verified 9a7a184 commit tag; later docs commits kept that release.",
+      "Backend replica drift is ignored so ArgoCD does not fight the HPA."
     ]
   },
   {
-    "title": "Observe behavior, not just containers",
-    "subtitle": "Prometheus and Grafana",
+    "title": "Check actual metrics, not assumptions",
+    "subtitle": "Prometheus and Grafana evidence",
     "points": [
-      "/health reports process liveness; /ready checks access to the migrated database.",
-      "/metrics exposes HTTP request counts, duration and status metrics.",
-      "A ServiceMonitor connects the API to Prometheus; verify its target is UP.",
-      "Grafana displays request rate, p95 latency and server errors.",
-      "Generate traffic and allow scrape intervals before recording the dashboard."
+      "Recorded Prometheus proof shows both CampusDesk API endpoints UP.",
+      "The campus dashboard contains real request-rate and p95-latency samples.",
+      "The error panel had no matching series; that was not presented as a measured zero.",
+      "Grafana authentication was refreshed after a monitoring pod restart."
     ]
   },
   {
-    "title": "Evidence and lessons",
-    "subtitle": "What is verified, and what still needs proof",
+    "title": "Delivery finished with a cleanup audit",
+    "subtitle": "Final results and limits",
     "points": [
-      "Verified: 31 isolated backend tests, including validation, CRUD, readiness and migration waiting.",
-      "Campus variant adds category and location validation, search, forms and a dedicated migration.",
-      "Local PostgreSQL CRUD and restart persistence passed. Cloud runtime evidence is recorded separately.",
-      "Keep test results, deployed state and teardown proof separate; none implies the others.",
-      "The demo has no authentication and uses a single PostgreSQL instance; production needs access control and a recovery plan."
+      "31 backend tests, four frontend tests, browser/mobile checks and PostgreSQL smoke passed.",
+      "A ten-slide deck and a recorded 11m38s walkthrough document the delivery.",
+      "Shared Terraform destroy removed 59 resources; all 11 scoped cleanup checks passed.",
+      "The owned KMS key is PendingDeletion until 15 November 2026 under AWS rules.",
+      "Local demo remains available. Production would need authentication, backups and recovery planning."
     ]
   }
 ]
