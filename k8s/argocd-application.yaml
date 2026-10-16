@@ -1,0 +1,28 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: campusdesk
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/AJ5831A/campusdesk-devsecops.git
+    targetRevision: main
+    path: helm/resolvedesk
+    helm:
+      releaseName: resolvedesk
+      valueFiles:
+        - values-prod.yaml
+        - values-release.yaml
+      parameters:
+        - name: ingress.host
+          value: campusdesk.local
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: campusdesk
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
