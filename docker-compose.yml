@@ -1,0 +1,58 @@
+name: campusdesk
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: resolvedesk
+      POSTGRES_USER: resolvedesk
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-resolvedesk-local-only}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U resolvedesk -d resolvedesk"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  backend:
+    build: ./backend
+    image: campusdesk-backend:local
+    environment:
+      DATABASE_URL: postgresql+psycopg://resolvedesk:${POSTGRES_PASSWORD:-resolvedesk-local-only}@postgres:5432/resolvedesk
+    command: ["sh", "-c", "alembic upgrade head && exec uvicorn app.main:app --host 0.0.0.0 --port 8000"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:8001:8000"
+    networks:
+      default:
+        aliases: [resolvedesk-backend]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/ready')"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+
+  frontend:
+    build: ./frontend
+    image: campusdesk-frontend:local
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:3002:8080"
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:8080/health"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    read_only: true
+    tmpfs: [/tmp]
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+
+volumes:
+  postgres-data:
