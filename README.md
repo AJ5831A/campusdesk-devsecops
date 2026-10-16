@@ -53,7 +53,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements-dev.txt
 alembic upgrade head
-uvicorn app.main:app --reload --port 8000
+uvicorn app.main:app --reload --port 8001
 ```
 
 In another terminal:
@@ -64,7 +64,7 @@ npm ci
 npm run dev
 ```
 
-The Vite development server proxies `/api` to localhost:8000.
+The Vite development server proxies `/api` to localhost:8001.
 
 ## Tests and API
 
@@ -127,4 +127,4 @@ The deliberately broken manifests in [troubleshooting](troubleshooting/) demonst
 
 This is an internal classroom demonstration, not a public customer service. It has no authentication, tenant isolation, email delivery, backups or HA database. Use synthetic data and local port forwards. PostgreSQL in Kubernetes is suitable for this exercise; a managed database and access controls would be required before public deployment.
 
-See [demo/README.md](demo/README.md) for the evidence index, slide deck, walkthrough and the exact distinction between completed verification and remaining requirements. Reference history is retained, and original project commits describe the meaningful helpdesk changes.
+See [demo/README.md](demo/README.md) for the evidence index, slide deck, walkthrough and the exact distinction between completed verification and remaining requirements. Assignment documents are retained, and this repository has its own commit history. The shared foundation is credited above.

@@ -1,3 +1,7 @@
+# Shared infrastructure for CampusDesk
+
+CampusDesk uses the original ResolveDesk EKS cluster. Its application resources are isolated in namespace `campusdesk`; the chart release is `resolvedesk` within that namespace. The original repository owns Terraform state, deployment and final teardown. Do not run a second apply from this copy against the same cluster name. The definitions below are retained for review and reproducibility.
+
 # AWS infrastructure
 
 Terraform provisions a VPC across two availability zones, two public and two private subnets, one NAT gateway, an EKS cluster, two managed worker nodes, and the EBS CSI driver with its own IAM service-account role. Workers use private subnets. Public API access is restricted to the CIDRs you supply; internal access remains enabled.
