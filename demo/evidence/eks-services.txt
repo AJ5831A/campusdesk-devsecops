@@ -1,0 +1,8 @@
+$ kubectl get svc,ingress -n campusdesk
+NAME                           TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)    AGE
+service/resolvedesk-backend    ClusterIP   172.20.168.212   <none>        8000/TCP   4m10s
+service/resolvedesk-frontend   ClusterIP   172.20.148.136   <none>        80/TCP     4m10s
+service/resolvedesk-postgres   ClusterIP   172.20.169.22    <none>        5432/TCP   4m10s
+
+NAME                                    CLASS   HOSTS              ADDRESS          PORTS   AGE
+ingress.networking.k8s.io/resolvedesk   nginx   campusdesk.local   172.20.115.182   80      4m10s

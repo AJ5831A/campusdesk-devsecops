@@ -107,6 +107,8 @@ Application and scanner base images are digest pinned. Python dependencies and n
 
 See [terraform/README.md](terraform/README.md) for setup, plan, apply and destroy. Terraform provisions a shared VPC, EKS, managed worker nodes and EBS CSI permissions. The account Elastic IP quota blocked NAT creation, so the approved temporary deployment uses public-subnet workers with public IPs, no NAT gateway, no public inbound security-group access and a Kubernetes API restricted to the operator /32. The Kubernetes API is restricted to the operator's explicit IP range. The example uses ap-south-1.
 
+The temporary replacement workers and application runtime were verified. The recovery apply remained waiting for removal of the failed original node group and was gracefully interrupted; it is not recorded as a successful apply completion. Final Terraform destroy removed 59 resources, and all 11 live scoped cleanup checks passed. The owned KMS key is PendingDeletion until 15 November 2026 under the AWS waiting period; the audit is linked in the evidence index.
+
 AWS infrastructure costs money while it exists. The capstone deployment is temporary; its final creation and teardown evidence is recorded in [demo](demo/). Terraform state, saved plans, credentials and real variable files must remain local.
 
 ## Kubernetes and GitOps

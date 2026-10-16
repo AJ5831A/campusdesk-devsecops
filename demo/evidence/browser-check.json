@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": [
+    "create campus ticket",
+    "edit category and location",
+    "location search",
+    "category search",
+    "delete",
+    "desktop",
+    "mobile details and actions",
+    "no horizontal overflow",
+    "no JavaScript errors"
+  ],
+  "data": "synthetic campus demonstration tickets"
+}

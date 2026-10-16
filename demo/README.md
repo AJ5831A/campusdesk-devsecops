@@ -7,8 +7,8 @@ Prepared for Aryan (AJ5831A). This campus IT variant credits the shared ResolveD
 - [Evidence index](evidence/README.md): actual local validation and separate deployment status.
 - [Walkthrough narration and capture plan](walkthrough.txt).
 
-The final walkthrough video is being prepared. It will disclose synthetic narration and show actual captured application and deployment evidence. A script or recording plan is not a completed video.
+[Watch the walkthrough video](walkthrough.mp4) (11 minutes 38 seconds, H.264 video with AAC audio). It presents all ten slides first, then records an actual Git push and complete successful CI run, the EKS application, Kubernetes resources, shared AWS Console captures, ArgoCD, Prometheus and live Grafana. The recording explicitly discloses synthetic narration and AI assistance.
 
 Local verification passed 31 backend tests, four frontend tests, HTTP integration, restart persistence and browser checks for campus fields and mobile layout. The first complete CI run is [38900823423](https://github.com/AJ5831A/campusdesk-devsecops/actions/runs/38900823423).
 
-Cloud deployment and teardown evidence use the same temporary EKS infrastructure as ResolveDesk. They must be captured and labelled as shared resources; local screenshots alone do not prove them.
+Cloud deployment evidence uses the same temporary EKS infrastructure as ResolveDesk and is labelled as shared resources. CampusDesk application and database resources occupy their own namespace. Shared Terraform teardown completed with 59 resources destroyed; all 11 live cleanup checks passed. The KMS key is PendingDeletion until 15 November 2026. See the evidence index for the exact audit.

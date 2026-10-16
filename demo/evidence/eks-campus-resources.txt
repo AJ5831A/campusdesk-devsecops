@@ -1,0 +1,21 @@
+NAME                                         READY   STATUS      RESTARTS   AGE
+pod/resolvedesk-backend-68db6cc8d7-9rpch     1/1     Running     0          3m57s
+pod/resolvedesk-backend-68db6cc8d7-pjqt2     1/1     Running     0          3m57s
+pod/resolvedesk-frontend-7fdc7c69f5-lj7jb    1/1     Running     0          3m57s
+pod/resolvedesk-frontend-7fdc7c69f5-wbrnd    1/1     Running     0          3m57s
+pod/resolvedesk-migrate-48f8db3311dd-gxnsh   0/1     Completed   0          55s
+pod/resolvedesk-postgres-0                   1/1     Running     0          3m57s
+
+NAME                           TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)    AGE
+service/resolvedesk-backend    ClusterIP   172.20.168.212   <none>        8000/TCP   3m57s
+service/resolvedesk-frontend   ClusterIP   172.20.148.136   <none>        80/TCP     3m57s
+service/resolvedesk-postgres   ClusterIP   172.20.169.22    <none>        5432/TCP   3m57s
+
+NAME                                    CLASS   HOSTS              ADDRESS          PORTS   AGE
+ingress.networking.k8s.io/resolvedesk   nginx   campusdesk.local   172.20.115.182   80      3m57s
+
+NAME                                                STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE
+persistentvolumeclaim/data-resolvedesk-postgres-0   Bound    pvc-e8bac8b0-6b82-49ed-89e8-0c5a661e1186   5Gi        RWO            gp3            <unset>                 3m57s
+
+NAME                                                      REFERENCE                        TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/resolvedesk-backend   Deployment/resolvedesk-backend   cpu: 7%/60%   2         6         2          3m57s

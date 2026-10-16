@@ -1,0 +1,28 @@
+{
+  "cut_before_grafana_seconds": 355.21423999999996,
+  "segments": {
+    "0-silence.wav": 0.615533,
+    "0-audio.wav": 194.027642,
+    "1-silence.wav": 0.639456,
+    "1-audio.wav": 16.608435,
+    "2-silence.wav": 0.684512,
+    "2-audio.wav": 17.232993,
+    "3-silence.wav": 0.644762,
+    "3-audio.wav": 13.863288,
+    "4-silence.wav": 0.596916,
+    "4-audio.wav": 15.794785,
+    "5-silence.wav": 0.584762,
+    "5-audio.wav": 14.713515,
+    "6-silence.wav": 0.597664,
+    "6-audio.wav": 19.577574,
+    "7-silence.wav": 0.566349,
+    "7-audio.wav": 13.237823,
+    "8-silence.wav": 0.632109,
+    "8-audio.wav": 14.507075,
+    "9-silence.wav": 0.580317,
+    "9-audio.wav": 14.826939,
+    "10-silence.wav": 0.579569,
+    "10-audio.wav": 13.527891,
+    "11-silence.wav": 0.574331
+  }
+}

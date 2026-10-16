@@ -1,0 +1,13 @@
+2443041 Document CampusDesk scope, shared foundation and assignment requirements
+d33e0b4 Implement validated campus ticket API with category and location migration
+8d7a497 Build campus IT interface with location and category editing and search
+3219257 Containerize isolated CampusDesk services with local health checks
+5e5e9e9 Define Helm workloads with migrations, probes and persistent storage
+e8f9461 Configure isolated campus namespace and ArgoCD application
+1c81117 Preserve shared EKS infrastructure definition and provisioning instructions
+c186ced Define CampusDesk Prometheus integration and namespace-specific dashboard
+ce3013f Gate campus image publication on tests, security scans and Kubernetes smoke
+d544c03 Add smoke validation, presentation generator and failure exercises
+d9ce3f4 Prepare CampusDesk presentation and evidence-aware walkthrough
+9a7a184 Verify campus workflow and promote first scanned release with isolated dashboard guidance
+e25ec47 Promote verified campus release and clarify shared infrastructure ownership

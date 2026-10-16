@@ -1,0 +1,36 @@
+{
+  "voice": "Samantha",
+  "storage_state": "/tmp/resolvedesk-grafana-auth.json",
+  "scenes": [
+    {
+      "url": "http://127.0.0.1:3001/d/campusdesk/campusdesk-api",
+      "actions": [
+        {
+          "selector": "text=\"HTTP requests per second\"",
+          "type": "wait"
+        },
+        {
+          "selector": "text=\"HTTP request latency p95\"",
+          "type": "wait"
+        }
+      ],
+      "narration": "After the monitoring pod restarted, I reopened its authenticated dashboard. These are live CampusDesk metrics selected by namespace. The request-rate and latency panels contain real samples. The server-error panel currently has no matching time series. This distinction matters: configuration alone is not proof of live data."
+    },
+    {
+      "image": "/Users/dibyochakraborty/campusdesk-devsecops/demo/evidence/local-pytest.png",
+      "narration": "Thirty-one backend tests cover validation, the ticket workflow, missing records, search, statistics, readiness failure and migration waiting. Campus category and required location have their own tests. Real PostgreSQL integration and browser checks complement the isolated tests."
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "/Users/dibyochakraborty/campusdesk-devsecops",
+        "log",
+        "--oneline",
+        "-15"
+      ],
+      "title": "CampusDesk development history",
+      "narration": "The repository records meaningful changes and credits the shared foundation. Implementation was assisted by an AI coding agent, and this narration is synthetic. The final infrastructure teardown evidence is recorded after both application walkthroughs finish."
+    }
+  ]
+}

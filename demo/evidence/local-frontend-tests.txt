@@ -1,0 +1,16 @@
+
+> campusdesk-frontend@1.0.0 test
+> node --test
+
+✔ request returns JSON and sends the API prefix (0.562459ms)
+✔ request accepts empty delete responses (0.0635ms)
+✔ request surfaces server failures instead of reporting success (0.184583ms)
+✔ request handles unavailable servers with non-JSON responses (0.077625ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 39.844375

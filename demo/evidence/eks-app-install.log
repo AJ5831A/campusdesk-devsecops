@@ -1,0 +1,8 @@
+Release "resolvedesk" does not exist. Installing it now.
+NAME: resolvedesk
+LAST DEPLOYED: Fri Oct 16 18:11:47 2026
+NAMESPACE: campusdesk
+STATUS: deployed
+REVISION: 1
+DESCRIPTION: Install complete
+TEST SUITE: None

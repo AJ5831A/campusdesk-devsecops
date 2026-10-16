@@ -25,3 +25,5 @@ test-results/
 
 .ruff_cache/
 .pytest_cache/
+
+!demo/evidence/**/*.log

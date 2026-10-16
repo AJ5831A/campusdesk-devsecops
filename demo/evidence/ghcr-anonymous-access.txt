@@ -1,0 +1,4 @@
+aj5831a/campusdesk-backend:9a7a184c8b98d6ff99d13641073925bd81051066 anonymous manifest HTTP 200 digest sha256:f0be8a8980ec90e5925e72a8597b8f51dd0dafc10fef0926e47592f5b50948f1
+Public package page HTTP 200
+aj5831a/campusdesk-frontend:9a7a184c8b98d6ff99d13641073925bd81051066 anonymous manifest HTTP 200 digest sha256:4b29e74759c42712a0a61ed9fd971b5b6e7f117a4d5a3af18617cd512347964c
+Public package page HTTP 200

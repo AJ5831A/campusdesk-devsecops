@@ -1,0 +1,4 @@
+NAME                    IMAGE                       COMMAND                  SERVICE    CREATED          STATUS                    PORTS
+campusdesk-backend-1    campusdesk-backend:local    "sh -c 'alembic upgr…"   backend    13 seconds ago   Up 11 seconds (healthy)   127.0.0.1:8001->8000/tcp
+campusdesk-frontend-1   campusdesk-frontend:local   "nginx -g 'daemon of…"   frontend   12 seconds ago   Up 5 seconds (healthy)    127.0.0.1:3002->8080/tcp
+campusdesk-postgres-1   postgres:16-alpine          "docker-entrypoint.s…"   postgres   25 minutes ago   Up 25 minutes (healthy)   5432/tcp

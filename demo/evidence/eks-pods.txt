@@ -1,0 +1,8 @@
+$ kubectl get pods -n campusdesk -o wide
+NAME                                     READY   STATUS      RESTARTS   AGE     IP              NODE                                           NOMINATED NODE   READINESS GATES
+resolvedesk-backend-68db6cc8d7-9rpch     1/1     Running     0          4m10s   10.20.102.104   ip-10-20-102-148.ap-south-1.compute.internal   <none>           <none>
+resolvedesk-backend-68db6cc8d7-pjqt2     1/1     Running     0          4m10s   10.20.101.95    ip-10-20-101-254.ap-south-1.compute.internal   <none>           <none>
+resolvedesk-frontend-7fdc7c69f5-lj7jb    1/1     Running     0          4m10s   10.20.101.221   ip-10-20-101-254.ap-south-1.compute.internal   <none>           <none>
+resolvedesk-frontend-7fdc7c69f5-wbrnd    1/1     Running     0          4m10s   10.20.102.35    ip-10-20-102-148.ap-south-1.compute.internal   <none>           <none>
+resolvedesk-migrate-48f8db3311dd-gxnsh   0/1     Completed   0          68s     10.20.101.97    ip-10-20-101-254.ap-south-1.compute.internal   <none>           <none>
+resolvedesk-postgres-0                   1/1     Running     0          4m10s   10.20.101.25    ip-10-20-101-254.ap-south-1.compute.internal   <none>           <none>

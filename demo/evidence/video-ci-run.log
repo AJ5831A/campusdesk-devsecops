@@ -1,0 +1,1260 @@
+test	Set up job	﻿2026-10-16T12:45:09.4162978Z Current runner version: '2.337.0'
+test	Set up job	2026-10-16T12:45:09.4202223Z ##[group]Runner Image Provisioner
+test	Set up job	2026-10-16T12:45:09.4204018Z Hosted Compute Agent
+test	Set up job	2026-10-16T12:45:09.4205582Z Version: 20261012.601
+test	Set up job	2026-10-16T12:45:09.4206793Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+test	Set up job	2026-10-16T12:45:09.4208037Z Build Date: 2026-10-12T17:48:21Z
+test	Set up job	2026-10-16T12:45:09.4209358Z Worker ID: {bd8dd0a1-dacb-42b9-92f1-e805d030a55e}
+test	Set up job	2026-10-16T12:45:09.4210614Z Region: eastus
+test	Set up job	2026-10-16T12:45:09.4211965Z Cloud: Azure
+test	Set up job	2026-10-16T12:45:09.4213044Z ##[endgroup]
+test	Set up job	2026-10-16T12:45:09.4215892Z ##[group]Operating System
+test	Set up job	2026-10-16T12:45:09.4217059Z Ubuntu
+test	Set up job	2026-10-16T12:45:09.4217997Z 24.04.5
+test	Set up job	2026-10-16T12:45:09.4218997Z LTS
+test	Set up job	2026-10-16T12:45:09.4219938Z ##[endgroup]
+test	Set up job	2026-10-16T12:45:09.4220843Z ##[group]Runner Image
+test	Set up job	2026-10-16T12:45:09.4222190Z Image: ubuntu-24.04
+test	Set up job	2026-10-16T12:45:09.4223189Z Version: 20261012.334.1
+test	Set up job	2026-10-16T12:45:09.4225339Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+test	Set up job	2026-10-16T12:45:09.4228658Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+test	Set up job	2026-10-16T12:45:09.4230444Z ##[endgroup]
+test	Set up job	2026-10-16T12:45:09.4232766Z ##[group]GITHUB_TOKEN Permissions
+test	Set up job	2026-10-16T12:45:09.4236635Z Contents: read
+test	Set up job	2026-10-16T12:45:09.4237841Z Metadata: read
+test	Set up job	2026-10-16T12:45:09.4238889Z ##[endgroup]
+test	Set up job	2026-10-16T12:45:09.4242621Z Secret source: Actions
+test	Set up job	2026-10-16T12:45:09.4244391Z Cache mode: write
+test	Set up job	2026-10-16T12:45:09.4245775Z Prepare workflow directory
+test	Set up job	2026-10-16T12:45:09.4741166Z Prepare all required actions
+test	Set up job	2026-10-16T12:45:09.4819239Z Getting action download info
+test	Set up job	2026-10-16T12:45:09.6750765Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+test	Set up job	2026-10-16T12:45:09.7800352Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+test	Set up job	2026-10-16T12:45:09.8608836Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+test	Set up job	2026-10-16T12:45:10.1264101Z Complete job name: test
+test	Run actions/checkout@v4	﻿2026-10-16T12:45:10.2065685Z ##[group]Run actions/checkout@v4
+test	Run actions/checkout@v4	2026-10-16T12:45:10.2066625Z with:
+test	Run actions/checkout@v4	2026-10-16T12:45:10.2067116Z   repository: AJ5831A/campusdesk-devsecops
+test	Run actions/checkout@v4	2026-10-16T12:45:10.2070842Z   token: ***
+test	Run actions/checkout@v4	2026-10-16T12:45:10.2071341Z   ssh-strict: true
+test	Run actions/checkout@v4	2026-10-16T12:45:10.2072036Z   ssh-user: git
+test	Run actions/checkout@v4	2026-10-16T12:45:10.2072493Z   persist-credentials: true
+test	Run actions/checkout@v4	2026-10-16T12:45:10.2073002Z   clean: true
+test	Run actions/checkout@v4	2026-10-16T12:45:10.2073454Z   sparse-checkout-cone-mode: true
+test	Run actions/checkout@v4	2026-10-16T12:45:10.2073975Z   fetch-depth: 1
+test	Run actions/checkout@v4	2026-10-16T12:45:10.2074417Z   fetch-tags: false
+test	Run actions/checkout@v4	2026-10-16T12:45:10.2074874Z   show-progress: true
+test	Run actions/checkout@v4	2026-10-16T12:45:10.2075333Z   lfs: false
+test	Run actions/checkout@v4	2026-10-16T12:45:10.2075748Z   submodules: false
+test	Run actions/checkout@v4	2026-10-16T12:45:10.2076209Z   set-safe-directory: true
+test	Run actions/checkout@v4	2026-10-16T12:45:10.2076731Z   allow-unsafe-pr-checkout: false
+test	Run actions/checkout@v4	2026-10-16T12:45:10.2077535Z ##[endgroup]
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3101313Z Syncing repository: AJ5831A/campusdesk-devsecops
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3104480Z ##[group]Getting Git version info
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3105852Z Working directory is '/home/runner/work/campusdesk-devsecops/campusdesk-devsecops'
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3107803Z [command]/usr/bin/git version
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3198833Z git version 2.55.0
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3226928Z ##[endgroup]
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3244049Z Temporarily overriding HOME='/home/runner/work/_temp/5be7c6cc-4041-4052-800b-586adc93cd79' before making global git config changes
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3246751Z Adding repository directory to the temporary git global config as a safe directory
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3251454Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/campusdesk-devsecops/campusdesk-devsecops
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3314892Z Deleting the contents of '/home/runner/work/campusdesk-devsecops/campusdesk-devsecops'
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3320461Z ##[group]Initializing the repository
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3325620Z [command]/usr/bin/git init /home/runner/work/campusdesk-devsecops/campusdesk-devsecops
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3482646Z hint: Using 'master' as the name for the initial branch. This default branch name
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3484573Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3486511Z hint: to use in all of your new repositories, which will suppress this warning,
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3488111Z hint: call:
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3488990Z hint:
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3489781Z hint: 	git config --global init.defaultBranch <name>
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3490908Z hint:
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3492330Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3493901Z hint: 'development'. The just-created branch can be renamed via this command:
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3494772Z hint:
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3495256Z hint: 	git branch -m <name>
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3495811Z hint:
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3496638Z hint: Disable this message with "git config set advice.defaultBranchName false"
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3498343Z Initialized empty Git repository in /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/.git/
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3500906Z [command]/usr/bin/git remote add origin https://github.com/AJ5831A/campusdesk-devsecops
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3560648Z ##[endgroup]
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3562018Z ##[group]Disabling automatic garbage collection
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3566023Z [command]/usr/bin/git config --local gc.auto 0
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3604593Z ##[endgroup]
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3605848Z ##[group]Setting up auth
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3612164Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test	Run actions/checkout@v4	2026-10-16T12:45:10.3659256Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test	Run actions/checkout@v4	2026-10-16T12:45:10.4185851Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test	Run actions/checkout@v4	2026-10-16T12:45:10.4231468Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test	Run actions/checkout@v4	2026-10-16T12:45:10.4512300Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test	Run actions/checkout@v4	2026-10-16T12:45:10.4557568Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test	Run actions/checkout@v4	2026-10-16T12:45:10.4823608Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+test	Run actions/checkout@v4	2026-10-16T12:45:10.4873194Z ##[endgroup]
+test	Run actions/checkout@v4	2026-10-16T12:45:10.4875133Z ##[group]Fetching the repository
+test	Run actions/checkout@v4	2026-10-16T12:45:10.4886779Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +c85837a512e8bc1a9866396632e2da2bd9c2d787:refs/remotes/origin/main
+test	Run actions/checkout@v4	2026-10-16T12:45:10.7214532Z From https://github.com/AJ5831A/campusdesk-devsecops
+test	Run actions/checkout@v4	2026-10-16T12:45:10.7216273Z  * [new ref]         c85837a512e8bc1a9866396632e2da2bd9c2d787 -> origin/main
+test	Run actions/checkout@v4	2026-10-16T12:45:10.7219346Z ##[endgroup]
+test	Run actions/checkout@v4	2026-10-16T12:45:10.7220725Z ##[group]Determining the checkout info
+test	Run actions/checkout@v4	2026-10-16T12:45:10.7223226Z ##[endgroup]
+test	Run actions/checkout@v4	2026-10-16T12:45:10.7229627Z [command]/usr/bin/git sparse-checkout disable
+test	Run actions/checkout@v4	2026-10-16T12:45:10.7289670Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+test	Run actions/checkout@v4	2026-10-16T12:45:10.7327090Z ##[group]Checking out the ref
+test	Run actions/checkout@v4	2026-10-16T12:45:10.7332368Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+test	Run actions/checkout@v4	2026-10-16T12:45:10.7444842Z Switched to a new branch 'main'
+test	Run actions/checkout@v4	2026-10-16T12:45:10.7456328Z branch 'main' set up to track 'origin/main'.
+test	Run actions/checkout@v4	2026-10-16T12:45:10.7462133Z ##[endgroup]
+test	Run actions/checkout@v4	2026-10-16T12:45:10.7505242Z [command]/usr/bin/git log -1 --format=%H
+test	Run actions/checkout@v4	2026-10-16T12:45:10.7532617Z c85837a512e8bc1a9866396632e2da2bd9c2d787
+test	Run actions/setup-python@v5	﻿2026-10-16T12:45:10.7821096Z ##[group]Run actions/setup-python@v5
+test	Run actions/setup-python@v5	2026-10-16T12:45:10.7821903Z with:
+test	Run actions/setup-python@v5	2026-10-16T12:45:10.7822335Z   python-version: 3.12
+test	Run actions/setup-python@v5	2026-10-16T12:45:10.7823023Z   cache: pip
+test	Run actions/setup-python@v5	2026-10-16T12:45:10.7823521Z   cache-dependency-path: backend/requirements*.txt
+test	Run actions/setup-python@v5	2026-10-16T12:45:10.7824146Z   check-latest: false
+test	Run actions/setup-python@v5	2026-10-16T12:45:10.7827568Z   token: ***
+test	Run actions/setup-python@v5	2026-10-16T12:45:10.7828017Z   update-environment: true
+test	Run actions/setup-python@v5	2026-10-16T12:45:10.7828522Z   allow-prereleases: false
+test	Run actions/setup-python@v5	2026-10-16T12:45:10.7829014Z   freethreaded: false
+test	Run actions/setup-python@v5	2026-10-16T12:45:10.7829482Z ##[endgroup]
+test	Run actions/setup-python@v5	2026-10-16T12:45:10.9242784Z ##[group]Installed versions
+test	Run actions/setup-python@v5	2026-10-16T12:45:10.9345740Z (node:2298) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+test	Run actions/setup-python@v5	2026-10-16T12:45:10.9347653Z (Use `node --trace-deprecation ...` to show where the warning was created)
+test	Run actions/setup-python@v5	2026-10-16T12:45:10.9348563Z Successfully set up CPython (3.12.15)
+test	Run actions/setup-python@v5	2026-10-16T12:45:10.9349523Z ##[endgroup]
+test	Run actions/setup-python@v5	2026-10-16T12:45:10.9714957Z [command]/opt/hostedtoolcache/Python/3.12.15/x64/bin/pip cache dir
+test	Run actions/setup-python@v5	2026-10-16T12:45:11.3197664Z /home/runner/.cache/pip
+test	Run actions/setup-python@v5	2026-10-16T12:45:11.4147878Z Cache hit for: setup-python-Linux-x64-24.04-Ubuntu-python-3.12.15-pip-50266f45f675239f5739f17a231162c57c82eba2f00775642d6319e3387060da
+test	Run actions/setup-python@v5	2026-10-16T12:45:11.4264276Z (node:2298) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+test	Run actions/setup-python@v5	2026-10-16T12:45:11.6185872Z Received 20186395 of 20186395 (100.0%), 114.6 MBs/sec
+test	Run actions/setup-python@v5	2026-10-16T12:45:11.6187096Z Cache Size: ~19 MB (20186395 B)
+test	Run actions/setup-python@v5	2026-10-16T12:45:11.6218517Z [command]/usr/bin/tar -xf /home/runner/work/_temp/3dd979c3-7ca5-4cd3-b34f-ac8ed94f2724/cache.tzst -P -C /home/runner/work/campusdesk-devsecops/campusdesk-devsecops --use-compress-program unzstd
+test	Run actions/setup-python@v5	2026-10-16T12:45:11.6807046Z Cache restored successfully
+test	Run actions/setup-python@v5	2026-10-16T12:45:11.6820544Z Cache restored from key: setup-python-Linux-x64-24.04-Ubuntu-python-3.12.15-pip-50266f45f675239f5739f17a231162c57c82eba2f00775642d6319e3387060da
+test	Install backend dependencies	﻿2026-10-16T12:45:11.7011106Z ##[group]Run pip install -r requirements-dev.txt
+test	Install backend dependencies	2026-10-16T12:45:11.7012282Z ^[[36;1mpip install -r requirements-dev.txt^[[0m
+test	Install backend dependencies	2026-10-16T12:45:11.7363322Z shell: /usr/bin/bash -e {0}
+test	Install backend dependencies	2026-10-16T12:45:11.7363927Z env:
+test	Install backend dependencies	2026-10-16T12:45:11.7364446Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+test	Install backend dependencies	2026-10-16T12:45:11.7365223Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+test	Install backend dependencies	2026-10-16T12:45:11.7365983Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+test	Install backend dependencies	2026-10-16T12:45:11.7366692Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+test	Install backend dependencies	2026-10-16T12:45:11.7367391Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+test	Install backend dependencies	2026-10-16T12:45:11.7368089Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+test	Install backend dependencies	2026-10-16T12:45:11.7368684Z ##[endgroup]
+test	Install backend dependencies	2026-10-16T12:45:12.4735027Z Collecting alembic==1.20.0 (from -r /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/backend/requirements.txt (line 1))
+test	Install backend dependencies	2026-10-16T12:45:12.4750641Z   Using cached alembic-1.20.0-py3-none-any.whl.metadata (7.3 kB)
+test	Install backend dependencies	2026-10-16T12:45:12.4842585Z Collecting annotated-doc==0.0.5 (from -r /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/backend/requirements.txt (line 2))
+test	Install backend dependencies	2026-10-16T12:45:12.4854747Z   Using cached annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+test	Install backend dependencies	2026-10-16T12:45:12.4935697Z Collecting annotated-types==0.8.0 (from -r /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/backend/requirements.txt (line 3))
+test	Install backend dependencies	2026-10-16T12:45:12.4947524Z   Using cached annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+test	Install backend dependencies	2026-10-16T12:45:12.5094496Z Collecting anyio==4.15.1 (from -r /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/backend/requirements.txt (line 4))
+test	Install backend dependencies	2026-10-16T12:45:12.5106973Z   Using cached anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+test	Install backend dependencies	2026-10-16T12:45:12.5240191Z Collecting click==8.5.0 (from -r /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/backend/requirements.txt (line 5))
+test	Install backend dependencies	2026-10-16T12:45:12.5251766Z   Using cached click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+test	Install backend dependencies	2026-10-16T12:45:12.5352445Z Collecting dnspython==2.9.0 (from -r /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/backend/requirements.txt (line 6))
+test	Install backend dependencies	2026-10-16T12:45:12.5364120Z   Using cached dnspython-2.9.0-py3-none-any.whl.metadata (5.7 kB)
+test	Install backend dependencies	2026-10-16T12:45:12.5481857Z Collecting email-validator==2.3.0 (from -r /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/backend/requirements.txt (line 7))
+test	Install backend dependencies	2026-10-16T12:45:12.5493904Z   Using cached email_validator-2.3.0-py3-none-any.whl.metadata (26 kB)
+test	Install backend dependencies	2026-10-16T12:45:12.5857860Z Collecting fastapi==0.143.2 (from -r /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/backend/requirements.txt (line 8))
+test	Install backend dependencies	2026-10-16T12:45:12.5871893Z   Using cached fastapi-0.143.2-py3-none-any.whl.metadata (26 kB)
+test	Install backend dependencies	2026-10-16T12:45:12.6006727Z Collecting h11==0.16.0 (from -r /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/backend/requirements.txt (line 9))
+test	Install backend dependencies	2026-10-16T12:45:12.6018641Z   Using cached h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+test	Install backend dependencies	2026-10-16T12:45:12.6125991Z Collecting idna==3.20 (from -r /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/backend/requirements.txt (line 10))
+test	Install backend dependencies	2026-10-16T12:45:12.6138014Z   Using cached idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+test	Install backend dependencies	2026-10-16T12:45:12.6257868Z Collecting mako==1.4.3 (from -r /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/backend/requirements.txt (line 11))
+test	Install backend dependencies	2026-10-16T12:45:12.6270685Z   Using cached mako-1.4.3-py3-none-any.whl.metadata (2.9 kB)
+test	Install backend dependencies	2026-10-16T12:45:12.6939847Z Collecting markupsafe==3.0.4 (from -r /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/backend/requirements.txt (line 12))
+test	Install backend dependencies	2026-10-16T12:45:12.6954631Z   Using cached markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+test	Install backend dependencies	2026-10-16T12:45:12.7110074Z Collecting opentelemetry-api==1.45.1 (from -r /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/backend/requirements.txt (line 13))
+test	Install backend dependencies	2026-10-16T12:45:12.7123352Z   Using cached opentelemetry_api-1.45.1-py3-none-any.whl.metadata (1.4 kB)
+test	Install backend dependencies	2026-10-16T12:45:12.7228093Z Collecting prometheus-client==0.26.0 (from -r /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/backend/requirements.txt (line 14))
+test	Install backend dependencies	2026-10-16T12:45:12.7240415Z   Using cached prometheus_client-0.26.0-py3-none-any.whl.metadata (2.1 kB)
+test	Install backend dependencies	2026-10-16T12:45:12.7357221Z Collecting prometheus-fastapi-instrumentator==8.1.0 (from -r /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/backend/requirements.txt (line 15))
+test	Install backend dependencies	2026-10-16T12:45:12.7370595Z   Using cached prometheus_fastapi_instrumentator-8.1.0-py3-none-any.whl.metadata (13 kB)
+test	Install backend dependencies	2026-10-16T12:45:12.7497320Z Collecting psycopg==3.3.6 (from -r /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/backend/requirements.txt (line 16))
+test	Install backend dependencies	2026-10-16T12:45:12.7508847Z   Using cached psycopg-3.3.6-py3-none-any.whl.metadata (4.4 kB)
+test	Install backend dependencies	2026-10-16T12:45:12.8999161Z Collecting psycopg-binary==3.3.6 (from -r /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/backend/requirements.txt (line 17))
+test	Install backend dependencies	2026-10-16T12:45:12.9013617Z   Using cached psycopg_binary-3.3.6-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.7 kB)
+test	Install backend dependencies	2026-10-16T12:45:12.9969788Z Collecting pydantic==2.14.1 (from -r /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/backend/requirements.txt (line 18))
+test	Install backend dependencies	2026-10-16T12:45:12.9984589Z   Using cached pydantic-2.14.1-py3-none-any.whl.metadata (133 kB)
+test	Install backend dependencies	2026-10-16T12:45:13.6730272Z Collecting pydantic-core==2.50.1 (from -r /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/backend/requirements.txt (line 19))
+test	Install backend dependencies	2026-10-16T12:45:13.6744087Z   Using cached pydantic_core-2.50.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+test	Install backend dependencies	2026-10-16T12:45:13.6873012Z Collecting pydantic-settings==2.16.0 (from -r /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/backend/requirements.txt (line 20))
+test	Install backend dependencies	2026-10-16T12:45:13.6884791Z   Using cached pydantic_settings-2.16.0-py3-none-any.whl.metadata (4.0 kB)
+test	Install backend dependencies	2026-10-16T12:45:13.7010711Z Collecting python-dotenv==1.2.4 (from -r /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/backend/requirements.txt (line 21))
+test	Install backend dependencies	2026-10-16T12:45:13.7023091Z   Using cached python_dotenv-1.2.4-py3-none-any.whl.metadata (29 kB)
+test	Install backend dependencies	2026-10-16T12:45:13.9825041Z Collecting sqlalchemy==2.1.4 (from -r /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/backend/requirements.txt (line 22))
+test	Install backend dependencies	2026-10-16T12:45:13.9839452Z   Using cached sqlalchemy-2.1.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (9.7 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.0078434Z Collecting starlette==1.8.0 (from -r /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/backend/requirements.txt (line 23))
+test	Install backend dependencies	2026-10-16T12:45:14.0091296Z   Using cached starlette-1.8.0-py3-none-any.whl.metadata (6.6 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.0235862Z Collecting typing-extensions==4.16.0 (from -r /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/backend/requirements.txt (line 24))
+test	Install backend dependencies	2026-10-16T12:45:14.0247442Z   Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.0336402Z Collecting typing-inspection==0.4.4 (from -r /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/backend/requirements.txt (line 25))
+test	Install backend dependencies	2026-10-16T12:45:14.0348058Z   Using cached typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.0741251Z Collecting uvicorn==0.54.0 (from -r /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/backend/requirements.txt (line 26))
+test	Install backend dependencies	2026-10-16T12:45:14.0755326Z   Using cached uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.0982610Z Collecting pytest==9.1.1 (from -r requirements-dev.txt (line 2))
+test	Install backend dependencies	2026-10-16T12:45:14.0996687Z   Using cached pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.1145363Z Collecting httpx==0.28.1 (from -r requirements-dev.txt (line 3))
+test	Install backend dependencies	2026-10-16T12:45:14.1165937Z   Using cached httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.1604812Z Collecting iniconfig>=1.0.1 (from pytest==9.1.1->-r requirements-dev.txt (line 2))
+test	Install backend dependencies	2026-10-16T12:45:14.1622437Z   Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.1744687Z Collecting packaging>=22 (from pytest==9.1.1->-r requirements-dev.txt (line 2))
+test	Install backend dependencies	2026-10-16T12:45:14.1756934Z   Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.1851092Z Collecting pluggy<2,>=1.5 (from pytest==9.1.1->-r requirements-dev.txt (line 2))
+test	Install backend dependencies	2026-10-16T12:45:14.1863398Z   Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2021510Z Collecting pygments>=2.7.2 (from pytest==9.1.1->-r requirements-dev.txt (line 2))
+test	Install backend dependencies	2026-10-16T12:45:14.2035433Z   Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2214120Z Collecting certifi (from httpx==0.28.1->-r requirements-dev.txt (line 3))
+test	Install backend dependencies	2026-10-16T12:45:14.2226311Z   Using cached certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2364479Z Collecting httpcore==1.* (from httpx==0.28.1->-r requirements-dev.txt (line 3))
+test	Install backend dependencies	2026-10-16T12:45:14.2383336Z   Using cached httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2473923Z Using cached alembic-1.20.0-py3-none-any.whl (268 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2486851Z Using cached annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2498594Z Using cached annotated_types-0.8.0-py3-none-any.whl (13 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2510240Z Using cached anyio-4.15.1-py3-none-any.whl (132 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2522514Z Using cached click-8.5.0-py3-none-any.whl (125 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2534623Z Using cached dnspython-2.9.0-py3-none-any.whl (354 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2547548Z Using cached email_validator-2.3.0-py3-none-any.whl (35 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2559056Z Using cached fastapi-0.143.2-py3-none-any.whl (144 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2571013Z Using cached h11-0.16.0-py3-none-any.whl (37 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2582901Z Using cached idna-3.20-py3-none-any.whl (69 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2594638Z Using cached mako-1.4.3-py3-none-any.whl (80 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2606926Z Using cached markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2618377Z Using cached opentelemetry_api-1.45.1-py3-none-any.whl (60 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2630108Z Using cached prometheus_client-0.26.0-py3-none-any.whl (64 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2641869Z Using cached prometheus_fastapi_instrumentator-8.1.0-py3-none-any.whl (19 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2653554Z Using cached starlette-1.8.0-py3-none-any.whl (79 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2665124Z Using cached psycopg-3.3.6-py3-none-any.whl (215 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2677382Z Using cached psycopg_binary-3.3.6-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.2 MB)
+test	Install backend dependencies	2026-10-16T12:45:14.2709320Z Using cached pydantic-2.14.1-py3-none-any.whl (488 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2723128Z Using cached pydantic_core-2.50.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+test	Install backend dependencies	2026-10-16T12:45:14.2742620Z Using cached pydantic_settings-2.16.0-py3-none-any.whl (80 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2754434Z Using cached python_dotenv-1.2.4-py3-none-any.whl (23 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2766142Z Using cached sqlalchemy-2.1.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (4.7 MB)
+test	Install backend dependencies	2026-10-16T12:45:14.2795905Z Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2807385Z Using cached typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2818709Z Using cached uvicorn-0.54.0-py3-none-any.whl (87 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2830439Z Using cached pytest-9.1.1-py3-none-any.whl (386 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2843444Z Using cached httpx-0.28.1-py3-none-any.whl (73 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2854998Z Using cached httpcore-1.0.9-py3-none-any.whl (78 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2866627Z Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2878474Z Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2890607Z Using cached packaging-26.3-py3-none-any.whl (129 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.2903381Z Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+test	Install backend dependencies	2026-10-16T12:45:14.2919906Z Using cached certifi-2026.7.22-py3-none-any.whl (136 kB)
+test	Install backend dependencies	2026-10-16T12:45:14.4776898Z Installing collected packages: typing-extensions, python-dotenv, pygments, psycopg-binary, prometheus-client, pluggy, packaging, markupsafe, iniconfig, idna, h11, dnspython, click, certifi, annotated-types, annotated-doc, uvicorn, typing-inspection, sqlalchemy, pytest, pydantic-core, psycopg, opentelemetry-api, mako, httpcore, email-validator, anyio, starlette, pydantic, httpx, alembic, pydantic-settings, prometheus-fastapi-instrumentator, fastapi
+test	Install backend dependencies	2026-10-16T12:45:18.8821475Z 
+test	Install backend dependencies	2026-10-16T12:45:18.8855782Z Successfully installed alembic-1.20.0 annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.15.1 certifi-2026.7.22 click-8.5.0 dnspython-2.9.0 email-validator-2.3.0 fastapi-0.143.2 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 idna-3.20 iniconfig-2.3.1 mako-1.4.3 markupsafe-3.0.4 opentelemetry-api-1.45.1 packaging-26.3 pluggy-1.7.0 prometheus-client-0.26.0 prometheus-fastapi-instrumentator-8.1.0 psycopg-3.3.6 psycopg-binary-3.3.6 pydantic-2.14.1 pydantic-core-2.50.1 pydantic-settings-2.16.0 pygments-2.21.0 pytest-9.1.1 python-dotenv-1.2.4 sqlalchemy-2.1.4 starlette-1.8.0 typing-extensions-4.16.0 typing-inspection-0.4.4 uvicorn-0.54.0
+test	Test isolated backend database	﻿2026-10-16T12:45:19.0049557Z ##[group]Run pytest -v
+test	Test isolated backend database	2026-10-16T12:45:19.0049878Z ^[[36;1mpytest -v^[[0m
+test	Test isolated backend database	2026-10-16T12:45:19.0117354Z shell: /usr/bin/bash -e {0}
+test	Test isolated backend database	2026-10-16T12:45:19.0117626Z env:
+test	Test isolated backend database	2026-10-16T12:45:19.0117899Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+test	Test isolated backend database	2026-10-16T12:45:19.0118376Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+test	Test isolated backend database	2026-10-16T12:45:19.0118839Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+test	Test isolated backend database	2026-10-16T12:45:19.0119230Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+test	Test isolated backend database	2026-10-16T12:45:19.0119629Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+test	Test isolated backend database	2026-10-16T12:45:19.0120213Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+test	Test isolated backend database	2026-10-16T12:45:19.0120552Z ##[endgroup]
+test	Test isolated backend database	2026-10-16T12:45:20.3458747Z ============================= test session starts ==============================
+test	Test isolated backend database	2026-10-16T12:45:20.3460222Z platform linux -- Python 3.12.15, pytest-9.1.1, pluggy-1.7.0 -- /opt/hostedtoolcache/Python/3.12.15/x64/bin/python
+test	Test isolated backend database	2026-10-16T12:45:20.3461277Z cachedir: .pytest_cache
+test	Test isolated backend database	2026-10-16T12:45:20.3462288Z rootdir: /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/backend
+test	Test isolated backend database	2026-10-16T12:45:20.3463133Z configfile: pytest.ini
+test	Test isolated backend database	2026-10-16T12:45:20.3463560Z plugins: anyio-4.15.1
+test	Test isolated backend database	2026-10-16T12:45:21.3913669Z collecting ... collected 31 items
+test	Test isolated backend database	2026-10-16T12:45:21.3914019Z 
+test	Test isolated backend database	2026-10-16T12:45:21.4155428Z tests/test_api.py::test_health_and_readiness PASSED                      [  3%]
+test	Test isolated backend database	2026-10-16T12:45:21.4432119Z tests/test_api.py::test_create_read_update_delete PASSED                 [  6%]
+test	Test isolated backend database	2026-10-16T12:45:21.4532890Z tests/test_api.py::test_create_validation[payload0] PASSED               [  9%]
+test	Test isolated backend database	2026-10-16T12:45:21.4626171Z tests/test_api.py::test_create_validation[payload1] PASSED               [ 12%]
+test	Test isolated backend database	2026-10-16T12:45:21.4723818Z tests/test_api.py::test_create_validation[payload2] PASSED               [ 16%]
+test	Test isolated backend database	2026-10-16T12:45:21.4815208Z tests/test_api.py::test_create_validation[payload3] PASSED               [ 19%]
+test	Test isolated backend database	2026-10-16T12:45:21.4906698Z tests/test_api.py::test_create_validation[payload4] PASSED               [ 22%]
+test	Test isolated backend database	2026-10-16T12:45:21.5011964Z tests/test_api.py::test_create_validation[payload5] PASSED               [ 25%]
+test	Test isolated backend database	2026-10-16T12:45:21.5100740Z tests/test_api.py::test_create_validation[payload6] PASSED               [ 29%]
+test	Test isolated backend database	2026-10-16T12:45:21.5189477Z tests/test_api.py::test_create_validation[payload7] PASSED               [ 32%]
+test	Test isolated backend database	2026-10-16T12:45:21.5315469Z tests/test_api.py::test_update_rejects_explicit_null[subject] PASSED     [ 35%]
+test	Test isolated backend database	2026-10-16T12:45:21.5444327Z tests/test_api.py::test_update_rejects_explicit_null[description] PASSED [ 38%]
+test	Test isolated backend database	2026-10-16T12:45:21.5576680Z tests/test_api.py::test_update_rejects_explicit_null[requester_email] PASSED [ 41%]
+test	Test isolated backend database	2026-10-16T12:45:21.5711087Z tests/test_api.py::test_update_rejects_explicit_null[priority] PASSED    [ 45%]
+test	Test isolated backend database	2026-10-16T12:45:21.5853594Z tests/test_api.py::test_update_rejects_explicit_null[status] PASSED      [ 48%]
+test	Test isolated backend database	2026-10-16T12:45:21.5983464Z tests/test_api.py::test_update_rejects_explicit_null[assignee] PASSED    [ 51%]
+test	Test isolated backend database	2026-10-16T12:45:21.6052471Z tests/test_api.py::test_missing_ticket[get-None] PASSED                  [ 54%]
+test	Test isolated backend database	2026-10-16T12:45:21.6124607Z tests/test_api.py::test_missing_ticket[delete-None] PASSED               [ 58%]
+test	Test isolated backend database	2026-10-16T12:45:21.6196347Z tests/test_api.py::test_missing_ticket[put-payload2] PASSED              [ 61%]
+test	Test isolated backend database	2026-10-16T12:45:21.6558651Z tests/test_api.py::test_search_filters_and_pagination PASSED             [ 64%]
+test	Test isolated backend database	2026-10-16T12:45:21.6813680Z tests/test_api.py::test_stats_only_count_unresolved_urgent PASSED        [ 67%]
+test	Test isolated backend database	2026-10-16T12:45:21.6899093Z tests/test_api.py::test_database_failure_is_not_ready PASSED             [ 70%]
+test	Test isolated backend database	2026-10-16T12:45:21.7043167Z tests/test_api.py::test_metrics_exposed PASSED                           [ 74%]
+test	Test isolated backend database	2026-10-16T12:45:21.7274206Z tests/test_api.py::test_campus_category_location_and_search PASSED       [ 77%]
+test	Test isolated backend database	2026-10-16T12:45:21.7340269Z tests/test_api.py::test_campus_fields_reject_invalid_values[payload0] PASSED [ 80%]
+test	Test isolated backend database	2026-10-16T12:45:21.7402543Z tests/test_api.py::test_campus_fields_reject_invalid_values[payload1] PASSED [ 83%]
+test	Test isolated backend database	2026-10-16T12:45:21.7462542Z tests/test_api.py::test_campus_fields_reject_invalid_values[payload2] PASSED [ 87%]
+test	Test isolated backend database	2026-10-16T12:45:21.7518798Z tests/test_api.py::test_location_is_required PASSED                      [ 90%]
+test	Test isolated backend database	2026-10-16T12:45:21.7549409Z tests/test_migration_wait.py::test_wait_returns_when_expected_revision_arrives PASSED [ 93%]
+test	Test isolated backend database	2026-10-16T12:45:21.7572158Z tests/test_migration_wait.py::test_wait_retries_database_errors PASSED   [ 96%]
+test	Test isolated backend database	2026-10-16T12:45:21.8448396Z tests/test_migration_wait.py::test_wait_fails_when_migration_never_arrives PASSED [100%]
+test	Test isolated backend database	2026-10-16T12:45:21.8449637Z 
+test	Test isolated backend database	2026-10-16T12:45:21.8449914Z =============================== warnings summary ===============================
+test	Test isolated backend database	2026-10-16T12:45:21.8450830Z ../../../../../../opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/fastapi/testclient.py:1
+test	Test isolated backend database	2026-10-16T12:45:21.8452990Z   /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+test	Test isolated backend database	2026-10-16T12:45:21.8454549Z     from starlette.testclient import TestClient as TestClient  # noqa
+test	Test isolated backend database	2026-10-16T12:45:21.8455007Z 
+test	Test isolated backend database	2026-10-16T12:45:21.8455329Z -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+test	Test isolated backend database	2026-10-16T12:45:21.8456042Z ======================== 31 passed, 1 warning in 1.42s =========================
+test	Run actions/setup-node@v4	﻿2026-10-16T12:45:22.0439548Z ##[group]Run actions/setup-node@v4
+test	Run actions/setup-node@v4	2026-10-16T12:45:22.0439868Z with:
+test	Run actions/setup-node@v4	2026-10-16T12:45:22.0440085Z   node-version: 22
+test	Run actions/setup-node@v4	2026-10-16T12:45:22.0440292Z   cache: npm
+test	Run actions/setup-node@v4	2026-10-16T12:45:22.0440544Z   cache-dependency-path: frontend/package-lock.json
+test	Run actions/setup-node@v4	2026-10-16T12:45:22.0440865Z   always-auth: false
+test	Run actions/setup-node@v4	2026-10-16T12:45:22.0441104Z   check-latest: false
+test	Run actions/setup-node@v4	2026-10-16T12:45:22.0443713Z   token: ***
+test	Run actions/setup-node@v4	2026-10-16T12:45:22.0443929Z env:
+test	Run actions/setup-node@v4	2026-10-16T12:45:22.0444195Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+test	Run actions/setup-node@v4	2026-10-16T12:45:22.0444637Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+test	Run actions/setup-node@v4	2026-10-16T12:45:22.0445079Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+test	Run actions/setup-node@v4	2026-10-16T12:45:22.0445479Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+test	Run actions/setup-node@v4	2026-10-16T12:45:22.0445869Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+test	Run actions/setup-node@v4	2026-10-16T12:45:22.0446267Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+test	Run actions/setup-node@v4	2026-10-16T12:45:22.0446593Z ##[endgroup]
+test	Run actions/setup-node@v4	2026-10-16T12:45:22.1931832Z Found in cache @ /opt/hostedtoolcache/node/22.23.3/x64
+test	Run actions/setup-node@v4	2026-10-16T12:45:22.1935880Z (node:2419) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+test	Run actions/setup-node@v4	2026-10-16T12:45:22.1936613Z (Use `node --trace-deprecation ...` to show where the warning was created)
+test	Run actions/setup-node@v4	2026-10-16T12:45:22.1939191Z ##[group]Environment details
+test	Run actions/setup-node@v4	2026-10-16T12:45:26.1033883Z node: v22.23.3
+test	Run actions/setup-node@v4	2026-10-16T12:45:26.1034204Z npm: 10.9.9
+test	Run actions/setup-node@v4	2026-10-16T12:45:26.1034400Z yarn: 1.22.22
+test	Run actions/setup-node@v4	2026-10-16T12:45:26.1035552Z ##[endgroup]
+test	Run actions/setup-node@v4	2026-10-16T12:45:26.1058892Z [command]/opt/hostedtoolcache/node/22.23.3/x64/bin/npm config get cache
+test	Run actions/setup-node@v4	2026-10-16T12:45:26.4694093Z /home/runner/.npm
+test	Run actions/setup-node@v4	2026-10-16T12:45:26.5767939Z Cache hit for: node-cache-Linux-x64-npm-dccee485f0eec55a798cf30821d023eb715e16919645e804fb32f6d4959b9f99
+test	Run actions/setup-node@v4	2026-10-16T12:45:26.5881178Z (node:2419) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+test	Run actions/setup-node@v4	2026-10-16T12:45:26.7532842Z Received 14641399 of 14641399 (100.0%), 98.3 MBs/sec
+test	Run actions/setup-node@v4	2026-10-16T12:45:26.7533557Z Cache Size: ~14 MB (14641399 B)
+test	Run actions/setup-node@v4	2026-10-16T12:45:26.7578040Z [command]/usr/bin/tar -xf /home/runner/work/_temp/d640d4ba-bd64-412d-a4d4-7bfcdbc764f0/cache.tzst -P -C /home/runner/work/campusdesk-devsecops/campusdesk-devsecops --use-compress-program unzstd
+test	Run actions/setup-node@v4	2026-10-16T12:45:26.7844127Z Cache restored successfully
+test	Run actions/setup-node@v4	2026-10-16T12:45:26.7855410Z Cache restored from key: node-cache-Linux-x64-npm-dccee485f0eec55a798cf30821d023eb715e16919645e804fb32f6d4959b9f99
+test	Install frontend dependencies	﻿2026-10-16T12:45:26.8018286Z ##[group]Run npm ci
+test	Install frontend dependencies	2026-10-16T12:45:26.8018565Z ^[[36;1mnpm ci^[[0m
+test	Install frontend dependencies	2026-10-16T12:45:26.8123805Z shell: /usr/bin/bash -e {0}
+test	Install frontend dependencies	2026-10-16T12:45:26.8124087Z env:
+test	Install frontend dependencies	2026-10-16T12:45:26.8124367Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+test	Install frontend dependencies	2026-10-16T12:45:26.8124866Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+test	Install frontend dependencies	2026-10-16T12:45:26.8125335Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+test	Install frontend dependencies	2026-10-16T12:45:26.8125920Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+test	Install frontend dependencies	2026-10-16T12:45:26.8126348Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+test	Install frontend dependencies	2026-10-16T12:45:26.8126767Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+test	Install frontend dependencies	2026-10-16T12:45:26.8127133Z ##[endgroup]
+test	Install frontend dependencies	2026-10-16T12:45:29.0654413Z 
+test	Install frontend dependencies	2026-10-16T12:45:29.0664471Z added 19 packages, and audited 20 packages in 2s
+test	Install frontend dependencies	2026-10-16T12:45:29.0665028Z 
+test	Install frontend dependencies	2026-10-16T12:45:29.0665402Z 8 packages are looking for funding
+test	Install frontend dependencies	2026-10-16T12:45:29.0666006Z   run `npm fund` for details
+test	Install frontend dependencies	2026-10-16T12:45:29.0667947Z 
+test	Install frontend dependencies	2026-10-16T12:45:29.0668341Z found 0 vulnerabilities
+test	Test frontend	﻿2026-10-16T12:45:29.1117344Z ##[group]Run npm test
+test	Test frontend	2026-10-16T12:45:29.1117638Z ^[[36;1mnpm test^[[0m
+test	Test frontend	2026-10-16T12:45:29.1184488Z shell: /usr/bin/bash -e {0}
+test	Test frontend	2026-10-16T12:45:29.1184775Z env:
+test	Test frontend	2026-10-16T12:45:29.1185062Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+test	Test frontend	2026-10-16T12:45:29.1185548Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+test	Test frontend	2026-10-16T12:45:29.1186022Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+test	Test frontend	2026-10-16T12:45:29.1186442Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+test	Test frontend	2026-10-16T12:45:29.1186874Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+test	Test frontend	2026-10-16T12:45:29.1187309Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+test	Test frontend	2026-10-16T12:45:29.1187668Z ##[endgroup]
+test	Test frontend	2026-10-16T12:45:29.2384576Z 
+test	Test frontend	2026-10-16T12:45:29.2385253Z > campusdesk-frontend@1.0.0 test
+test	Test frontend	2026-10-16T12:45:29.2385760Z > node --test
+test	Test frontend	2026-10-16T12:45:29.2385936Z 
+test	Test frontend	2026-10-16T12:45:29.3289903Z TAP version 13
+test	Test frontend	2026-10-16T12:45:29.3721009Z # Subtest: request returns JSON and sends the API prefix
+test	Test frontend	2026-10-16T12:45:29.3735120Z ok 1 - request returns JSON and sends the API prefix
+test	Test frontend	2026-10-16T12:45:29.3737123Z   ---
+test	Test frontend	2026-10-16T12:45:29.3737810Z   duration_ms: 1.631019
+test	Test frontend	2026-10-16T12:45:29.3738287Z   type: 'test'
+test	Test frontend	2026-10-16T12:45:29.3738694Z   ...
+test	Test frontend	2026-10-16T12:45:29.3746610Z # Subtest: request accepts empty delete responses
+test	Test frontend	2026-10-16T12:45:29.3747623Z ok 2 - request accepts empty delete responses
+test	Test frontend	2026-10-16T12:45:29.3748425Z   ---
+test	Test frontend	2026-10-16T12:45:29.3748801Z   duration_ms: 0.207208
+test	Test frontend	2026-10-16T12:45:29.3749468Z   type: 'test'
+test	Test frontend	2026-10-16T12:45:29.3749906Z   ...
+test	Test frontend	2026-10-16T12:45:29.3751518Z # Subtest: request surfaces server failures instead of reporting success
+test	Test frontend	2026-10-16T12:45:29.3754455Z ok 3 - request surfaces server failures instead of reporting success
+test	Test frontend	2026-10-16T12:45:29.3755393Z   ---
+test	Test frontend	2026-10-16T12:45:29.3755627Z   duration_ms: 0.617214
+test	Test frontend	2026-10-16T12:45:29.3755891Z   type: 'test'
+test	Test frontend	2026-10-16T12:45:29.3756110Z   ...
+test	Test frontend	2026-10-16T12:45:29.3758410Z # Subtest: request handles unavailable servers with non-JSON responses
+test	Test frontend	2026-10-16T12:45:29.3760656Z ok 4 - request handles unavailable servers with non-JSON responses
+test	Test frontend	2026-10-16T12:45:29.3766410Z   ---
+test	Test frontend	2026-10-16T12:45:29.3766869Z   duration_ms: 1.129021
+test	Test frontend	2026-10-16T12:45:29.3767379Z   type: 'test'
+test	Test frontend	2026-10-16T12:45:29.3767798Z   ...
+test	Test frontend	2026-10-16T12:45:29.3875343Z 1..4
+test	Test frontend	2026-10-16T12:45:29.3876030Z # tests 4
+test	Test frontend	2026-10-16T12:45:29.3882428Z # suites 0
+test	Test frontend	2026-10-16T12:45:29.3886038Z # pass 4
+test	Test frontend	2026-10-16T12:45:29.3886521Z # fail 0
+test	Test frontend	2026-10-16T12:45:29.3886858Z # cancelled 0
+test	Test frontend	2026-10-16T12:45:29.3887166Z # skipped 0
+test	Test frontend	2026-10-16T12:45:29.3887398Z # todo 0
+test	Test frontend	2026-10-16T12:45:29.3887637Z # duration_ms 89.235288
+test	Build frontend	﻿2026-10-16T12:45:29.4032150Z ##[group]Run npm run build
+test	Build frontend	2026-10-16T12:45:29.4032503Z ^[[36;1mnpm run build^[[0m
+test	Build frontend	2026-10-16T12:45:29.4096570Z shell: /usr/bin/bash -e {0}
+test	Build frontend	2026-10-16T12:45:29.4096861Z env:
+test	Build frontend	2026-10-16T12:45:29.4097142Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+test	Build frontend	2026-10-16T12:45:29.4097621Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+test	Build frontend	2026-10-16T12:45:29.4098076Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+test	Build frontend	2026-10-16T12:45:29.4098476Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+test	Build frontend	2026-10-16T12:45:29.4098883Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+test	Build frontend	2026-10-16T12:45:29.4099284Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+test	Build frontend	2026-10-16T12:45:29.4099814Z ##[endgroup]
+test	Build frontend	2026-10-16T12:45:29.5150309Z 
+test	Build frontend	2026-10-16T12:45:29.5151805Z > campusdesk-frontend@1.0.0 build
+test	Build frontend	2026-10-16T12:45:29.5152250Z > vite build
+test	Build frontend	2026-10-16T12:45:29.5152407Z 
+test	Build frontend	2026-10-16T12:45:29.8693911Z ^[[36mvite v8.3.4 ^[[32mbuilding client environment for production...^[[36m^[[39m
+test	Build frontend	2026-10-16T12:45:29.8816904Z transforming...
+test	Build frontend	2026-10-16T12:45:29.9392379Z ✓ 18 modules transformed.
+test	Build frontend	2026-10-16T12:45:29.9601060Z rendering chunks...
+test	Build frontend	2026-10-16T12:45:29.9931222Z computing gzip size...
+test	Build frontend	2026-10-16T12:45:29.9970991Z dist/index.html                   0.46 kB │ gzip:  0.30 kB
+test	Build frontend	2026-10-16T12:45:29.9972161Z dist/assets/index-CQcoK_bS.css    6.20 kB │ gzip:  2.12 kB
+test	Build frontend	2026-10-16T12:45:29.9972771Z dist/assets/index-DEaFGXCI.js   229.07 kB │ gzip: 71.70 kB
+test	Build frontend	2026-10-16T12:45:29.9973036Z 
+test	Build frontend	2026-10-16T12:45:29.9975152Z ^[[32m✓ built in 127ms^[[39m
+test	Post Run actions/setup-node@v4	﻿2026-10-16T12:45:30.0273792Z Post job cleanup.
+test	Post Run actions/setup-node@v4	2026-10-16T12:45:30.1530430Z (node:2543) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+test	Post Run actions/setup-node@v4	2026-10-16T12:45:30.1531483Z (Use `node --trace-deprecation ...` to show where the warning was created)
+test	Post Run actions/setup-node@v4	2026-10-16T12:45:30.1535153Z Cache hit occurred on the primary key node-cache-Linux-x64-npm-dccee485f0eec55a798cf30821d023eb715e16919645e804fb32f6d4959b9f99, not saving cache.
+test	Post Run actions/setup-python@v5	﻿2026-10-16T12:45:30.1661033Z Post job cleanup.
+test	Post Run actions/setup-python@v5	2026-10-16T12:45:30.2889704Z Cache hit occurred on the primary key setup-python-Linux-x64-24.04-Ubuntu-python-3.12.15-pip-50266f45f675239f5739f17a231162c57c82eba2f00775642d6319e3387060da, not saving cache.
+test	Post Run actions/setup-python@v5	2026-10-16T12:45:30.2891676Z (node:2551) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+test	Post Run actions/setup-python@v5	2026-10-16T12:45:30.2892941Z (Use `node --trace-deprecation ...` to show where the warning was created)
+test	Post Run actions/checkout@v4	﻿2026-10-16T12:45:30.3059279Z Post job cleanup.
+test	Post Run actions/checkout@v4	2026-10-16T12:45:30.3936631Z [command]/usr/bin/git version
+test	Post Run actions/checkout@v4	2026-10-16T12:45:30.3979808Z git version 2.55.0
+test	Post Run actions/checkout@v4	2026-10-16T12:45:30.4021286Z Temporarily overriding HOME='/home/runner/work/_temp/c9888db2-69c5-48c4-970c-95aded7d1790' before making global git config changes
+test	Post Run actions/checkout@v4	2026-10-16T12:45:30.4022998Z Adding repository directory to the temporary git global config as a safe directory
+test	Post Run actions/checkout@v4	2026-10-16T12:45:30.4029724Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/campusdesk-devsecops/campusdesk-devsecops
+test	Post Run actions/checkout@v4	2026-10-16T12:45:30.4069363Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test	Post Run actions/checkout@v4	2026-10-16T12:45:30.4107787Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test	Post Run actions/checkout@v4	2026-10-16T12:45:30.4411101Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test	Post Run actions/checkout@v4	2026-10-16T12:45:30.4444901Z http.https://github.com/.extraheader
+test	Post Run actions/checkout@v4	2026-10-16T12:45:30.4458146Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+test	Post Run actions/checkout@v4	2026-10-16T12:45:30.4502253Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test	Post Run actions/checkout@v4	2026-10-16T12:45:30.4765653Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test	Post Run actions/checkout@v4	2026-10-16T12:45:30.4813692Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test	Complete job	﻿2026-10-16T12:45:30.5233311Z Cleaning up orphan processes
+test	Complete job	2026-10-16T12:45:30.5514174Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build-scan-publish	Set up job	﻿2026-10-16T12:45:36.3590927Z Current runner version: '2.337.0'
+build-scan-publish	Set up job	2026-10-16T12:45:36.3618921Z ##[group]Runner Image Provisioner
+build-scan-publish	Set up job	2026-10-16T12:45:36.3619903Z Hosted Compute Agent
+build-scan-publish	Set up job	2026-10-16T12:45:36.3620501Z Version: 20261012.601
+build-scan-publish	Set up job	2026-10-16T12:45:36.3621224Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+build-scan-publish	Set up job	2026-10-16T12:45:36.3622359Z Build Date: 2026-10-12T17:48:21Z
+build-scan-publish	Set up job	2026-10-16T12:45:36.3623294Z Worker ID: {a10ec9eb-3b0e-4e71-a954-1d3d20bfac2c}
+build-scan-publish	Set up job	2026-10-16T12:45:36.3624077Z Region: westus
+build-scan-publish	Set up job	2026-10-16T12:45:36.3624601Z Cloud: Azure
+build-scan-publish	Set up job	2026-10-16T12:45:36.3625678Z ##[endgroup]
+build-scan-publish	Set up job	2026-10-16T12:45:36.3627457Z ##[group]Operating System
+build-scan-publish	Set up job	2026-10-16T12:45:36.3628249Z Ubuntu
+build-scan-publish	Set up job	2026-10-16T12:45:36.3628835Z 24.04.5
+build-scan-publish	Set up job	2026-10-16T12:45:36.3629350Z LTS
+build-scan-publish	Set up job	2026-10-16T12:45:36.3629905Z ##[endgroup]
+build-scan-publish	Set up job	2026-10-16T12:45:36.3630500Z ##[group]Runner Image
+build-scan-publish	Set up job	2026-10-16T12:45:36.3631140Z Image: ubuntu-24.04
+build-scan-publish	Set up job	2026-10-16T12:45:36.3631753Z Version: 20261012.334.1
+build-scan-publish	Set up job	2026-10-16T12:45:36.3633472Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+build-scan-publish	Set up job	2026-10-16T12:45:36.3635327Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+build-scan-publish	Set up job	2026-10-16T12:45:36.3636384Z ##[endgroup]
+build-scan-publish	Set up job	2026-10-16T12:45:36.3637643Z ##[group]GITHUB_TOKEN Permissions
+build-scan-publish	Set up job	2026-10-16T12:45:36.3639933Z Contents: read
+build-scan-publish	Set up job	2026-10-16T12:45:36.3640598Z Metadata: read
+build-scan-publish	Set up job	2026-10-16T12:45:36.3641175Z Packages: write
+build-scan-publish	Set up job	2026-10-16T12:45:36.3641829Z ##[endgroup]
+build-scan-publish	Set up job	2026-10-16T12:45:36.3644238Z Secret source: Actions
+build-scan-publish	Set up job	2026-10-16T12:45:36.3645312Z Cache mode: write
+build-scan-publish	Set up job	2026-10-16T12:45:36.3646045Z Prepare workflow directory
+build-scan-publish	Set up job	2026-10-16T12:45:36.4015655Z Prepare all required actions
+build-scan-publish	Set up job	2026-10-16T12:45:36.4091210Z Getting action download info
+build-scan-publish	Set up job	2026-10-16T12:45:36.8279992Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+build-scan-publish	Set up job	2026-10-16T12:45:36.9478675Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+build-scan-publish	Set up job	2026-10-16T12:45:37.0538584Z Download action repository 'helm/kind-action@v1.12.0' (SHA:a1b0e391336a6ee6713a0583f8c6240d70863de3)
+build-scan-publish	Set up job	2026-10-16T12:45:37.2724609Z Download action repository 'azure/setup-helm@v4.3.0' (SHA:b9e51907a09c216f16ebe8536097933489208112)
+build-scan-publish	Set up job	2026-10-16T12:45:37.5832719Z Download action repository 'docker/login-action@v3' (SHA:c94ce9fb468520275223c153574b00df6fe4bcc9)
+build-scan-publish	Set up job	2026-10-16T12:45:38.2572840Z Complete job name: build-scan-publish
+build-scan-publish	Run actions/checkout@v4	﻿2026-10-16T12:45:38.3594769Z ##[group]Run actions/checkout@v4
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.3596361Z with:
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.3597299Z   repository: AJ5831A/campusdesk-devsecops
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.3605937Z   token: ***
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.3606800Z   ssh-strict: true
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.3607659Z   ssh-user: git
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.3608524Z   persist-credentials: true
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.3609481Z   clean: true
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.3610357Z   sparse-checkout-cone-mode: true
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.3611388Z   fetch-depth: 1
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.3612409Z   fetch-tags: false
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.3613286Z   show-progress: true
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.3614185Z   lfs: false
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.3614982Z   submodules: false
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.3615877Z   set-safe-directory: true
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.3616860Z   allow-unsafe-pr-checkout: false
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.3618179Z ##[endgroup]
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.4810998Z Syncing repository: AJ5831A/campusdesk-devsecops
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.4814727Z ##[group]Getting Git version info
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.4816617Z Working directory is '/home/runner/work/campusdesk-devsecops/campusdesk-devsecops'
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.4819501Z [command]/usr/bin/git version
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.4862738Z git version 2.55.0
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.4897423Z ##[endgroup]
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.4912476Z Temporarily overriding HOME='/home/runner/work/_temp/1963af48-5744-4e18-9bc6-4318da8e036c' before making global git config changes
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.4920563Z Adding repository directory to the temporary git global config as a safe directory
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.4925178Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/campusdesk-devsecops/campusdesk-devsecops
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.4968042Z Deleting the contents of '/home/runner/work/campusdesk-devsecops/campusdesk-devsecops'
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.4977179Z ##[group]Initializing the repository
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.4980062Z [command]/usr/bin/git init /home/runner/work/campusdesk-devsecops/campusdesk-devsecops
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.5105313Z hint: Using 'master' as the name for the initial branch. This default branch name
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.5108937Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.5112353Z hint: to use in all of your new repositories, which will suppress this warning,
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.5114998Z hint: call:
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.5116309Z hint:
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.5117899Z hint: 	git config --global init.defaultBranch <name>
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.5119952Z hint:
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.5121830Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.5125234Z hint: 'development'. The just-created branch can be renamed via this command:
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.5127765Z hint:
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.5129173Z hint: 	git branch -m <name>
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.5133033Z hint:
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.5135221Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.5139306Z Initialized empty Git repository in /home/runner/work/campusdesk-devsecops/campusdesk-devsecops/.git/
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.5145253Z [command]/usr/bin/git remote add origin https://github.com/AJ5831A/campusdesk-devsecops
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.5202927Z ##[endgroup]
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.5303123Z ##[group]Disabling automatic garbage collection
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.5304882Z [command]/usr/bin/git config --local gc.auto 0
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.5328751Z ##[endgroup]
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.5331027Z ##[group]Setting up auth
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.5333624Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.5339390Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.5742648Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.5796195Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.6043258Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.6082670Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.6318083Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.6364675Z ##[endgroup]
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.6367590Z ##[group]Fetching the repository
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:38.6378382Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +c85837a512e8bc1a9866396632e2da2bd9c2d787:refs/remotes/origin/main
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:39.0310592Z From https://github.com/AJ5831A/campusdesk-devsecops
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:39.0313061Z  * [new ref]         c85837a512e8bc1a9866396632e2da2bd9c2d787 -> origin/main
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:39.0317250Z ##[endgroup]
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:39.0319023Z ##[group]Determining the checkout info
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:39.0320975Z ##[endgroup]
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:39.0325490Z [command]/usr/bin/git sparse-checkout disable
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:39.0384113Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:39.0421014Z ##[group]Checking out the ref
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:39.0424624Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:39.0540829Z Switched to a new branch 'main'
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:39.0545496Z branch 'main' set up to track 'origin/main'.
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:39.0554430Z ##[endgroup]
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:39.0603023Z [command]/usr/bin/git log -1 --format=%H
+build-scan-publish	Run actions/checkout@v4	2026-10-16T12:45:39.0632960Z c85837a512e8bc1a9866396632e2da2bd9c2d787
+build-scan-publish	Define immutable image tags	﻿2026-10-16T12:45:39.0906951Z ##[group]Run echo "BACKEND_IMAGE=ghcr.io/${OWNER,,}/campusdesk-backend:$SHA" >> "$GITHUB_ENV"
+build-scan-publish	Define immutable image tags	2026-10-16T12:45:39.0909193Z ^[[36;1mecho "BACKEND_IMAGE=ghcr.io/${OWNER,,}/campusdesk-backend:$SHA" >> "$GITHUB_ENV"^[[0m
+build-scan-publish	Define immutable image tags	2026-10-16T12:45:39.0911322Z ^[[36;1mecho "FRONTEND_IMAGE=ghcr.io/${OWNER,,}/campusdesk-frontend:$SHA" >> "$GITHUB_ENV"^[[0m
+build-scan-publish	Define immutable image tags	2026-10-16T12:45:39.1166847Z shell: /usr/bin/bash -e {0}
+build-scan-publish	Define immutable image tags	2026-10-16T12:45:39.1168135Z env:
+build-scan-publish	Define immutable image tags	2026-10-16T12:45:39.1169074Z   OWNER: AJ5831A
+build-scan-publish	Define immutable image tags	2026-10-16T12:45:39.1170193Z   SHA: c85837a512e8bc1a9866396632e2da2bd9c2d787
+build-scan-publish	Define immutable image tags	2026-10-16T12:45:39.1171563Z ##[endgroup]
+build-scan-publish	Build images once	﻿2026-10-16T12:45:39.1372871Z ##[group]Run docker build --pull --label org.opencontainers.image.source="https://github.com/$GITHUB_REPOSITORY" --label org.opencontainers.image.revision="$GITHUB_SHA" -t "$BACKEND_IMAGE" ./backend
+build-scan-publish	Build images once	2026-10-16T12:45:39.1377797Z ^[[36;1mdocker build --pull --label org.opencontainers.image.source="https://github.com/$GITHUB_REPOSITORY" --label org.opencontainers.image.revision="$GITHUB_SHA" -t "$BACKEND_IMAGE" ./backend^[[0m
+build-scan-publish	Build images once	2026-10-16T12:45:39.1382706Z ^[[36;1mdocker build --pull --label org.opencontainers.image.source="https://github.com/$GITHUB_REPOSITORY" --label org.opencontainers.image.revision="$GITHUB_SHA" -t "$FRONTEND_IMAGE" ./frontend^[[0m
+build-scan-publish	Build images once	2026-10-16T12:45:39.1450523Z shell: /usr/bin/bash -e {0}
+build-scan-publish	Build images once	2026-10-16T12:45:39.1451484Z env:
+build-scan-publish	Build images once	2026-10-16T12:45:39.1453179Z   BACKEND_IMAGE: ghcr.io/aj5831a/campusdesk-backend:c85837a512e8bc1a9866396632e2da2bd9c2d787
+build-scan-publish	Build images once	2026-10-16T12:45:39.1455480Z   FRONTEND_IMAGE: ghcr.io/aj5831a/campusdesk-frontend:c85837a512e8bc1a9866396632e2da2bd9c2d787
+build-scan-publish	Build images once	2026-10-16T12:45:39.1457129Z ##[endgroup]
+build-scan-publish	Build images once	2026-10-16T12:45:39.6933279Z #0 building with "default" instance using docker driver
+build-scan-publish	Build images once	2026-10-16T12:45:39.6934715Z 
+build-scan-publish	Build images once	2026-10-16T12:45:39.6934984Z #1 [internal] load build definition from Dockerfile
+build-scan-publish	Build images once	2026-10-16T12:45:39.6935761Z #1 transferring dockerfile: 456B done
+build-scan-publish	Build images once	2026-10-16T12:45:39.6936260Z #1 DONE 0.0s
+build-scan-publish	Build images once	2026-10-16T12:45:39.6936483Z 
+build-scan-publish	Build images once	2026-10-16T12:45:39.6937238Z #2 [internal] load metadata for docker.io/library/python:3.12-alpine@sha256:1b668429b3511ab407d8e00648891631b0b1a4d7e15e3ca70f38ab5b91ad4ab4
+build-scan-publish	Build images once	2026-10-16T12:45:39.9313255Z #2 ...
+build-scan-publish	Build images once	2026-10-16T12:45:39.9313779Z 
+build-scan-publish	Build images once	2026-10-16T12:45:39.9314132Z #3 [auth] library/python:pull token for registry-1.docker.io
+build-scan-publish	Build images once	2026-10-16T12:45:39.9314761Z #3 DONE 0.0s
+build-scan-publish	Build images once	2026-10-16T12:45:40.0821375Z 
+build-scan-publish	Build images once	2026-10-16T12:45:40.0823151Z #2 [internal] load metadata for docker.io/library/python:3.12-alpine@sha256:1b668429b3511ab407d8e00648891631b0b1a4d7e15e3ca70f38ab5b91ad4ab4
+build-scan-publish	Build images once	2026-10-16T12:45:40.4111918Z #2 DONE 0.9s
+build-scan-publish	Build images once	2026-10-16T12:45:40.5303098Z 
+build-scan-publish	Build images once	2026-10-16T12:45:40.5303959Z #4 [internal] load .dockerignore
+build-scan-publish	Build images once	2026-10-16T12:45:40.5304840Z #4 transferring context: 101B done
+build-scan-publish	Build images once	2026-10-16T12:45:40.5305473Z #4 DONE 0.0s
+build-scan-publish	Build images once	2026-10-16T12:45:40.5305819Z 
+build-scan-publish	Build images once	2026-10-16T12:45:40.5306077Z #5 [internal] load build context
+build-scan-publish	Build images once	2026-10-16T12:45:40.5306800Z #5 transferring context: 16.65kB done
+build-scan-publish	Build images once	2026-10-16T12:45:40.5307457Z #5 DONE 0.0s
+build-scan-publish	Build images once	2026-10-16T12:45:40.5307776Z 
+build-scan-publish	Build images once	2026-10-16T12:45:40.5308633Z #6 [1/7] FROM docker.io/library/python:3.12-alpine@sha256:1b668429b3511ab407d8e00648891631b0b1a4d7e15e3ca70f38ab5b91ad4ab4
+build-scan-publish	Build images once	2026-10-16T12:45:40.5310581Z #6 resolve docker.io/library/python:3.12-alpine@sha256:1b668429b3511ab407d8e00648891631b0b1a4d7e15e3ca70f38ab5b91ad4ab4 done
+build-scan-publish	Build images once	2026-10-16T12:45:40.5312466Z #6 sha256:bce3d672089f7ccc5125c3f8f95542fa3971138f323fb7f77e338a14396c85aa 0B / 416.28kB 0.1s
+build-scan-publish	Build images once	2026-10-16T12:45:40.5313982Z #6 sha256:283ac05c32e67060aa59f8a841b02df4cc0bd7fbf8d880f67d9b622e1cbd1935 0B / 16.36MB 0.1s
+build-scan-publish	Build images once	2026-10-16T12:45:40.5315369Z #6 sha256:e203d50c86bd38d307585d33fd69e7e7fd91e7535b65af46aa1d663cfb80c0fa 0B / 248B 0.1s
+build-scan-publish	Build images once	2026-10-16T12:45:40.5316903Z #6 sha256:1b668429b3511ab407d8e00648891631b0b1a4d7e15e3ca70f38ab5b91ad4ab4 10.30kB / 10.30kB done
+build-scan-publish	Build images once	2026-10-16T12:45:40.5318348Z #6 sha256:2055081c860db8c842b663415b795b026e7e5cc63b59c5193fcc9997713ea5b8 1.74kB / 1.74kB done
+build-scan-publish	Build images once	2026-10-16T12:45:40.5320273Z #6 sha256:979e5a8a56846771598d47ebf1f8a75b46155104e168a0b237c0783c1dedff8a 5.43kB / 5.43kB done
+build-scan-publish	Build images once	2026-10-16T12:45:40.7260407Z #6 sha256:bce3d672089f7ccc5125c3f8f95542fa3971138f323fb7f77e338a14396c85aa 416.28kB / 416.28kB 0.2s done
+build-scan-publish	Build images once	2026-10-16T12:45:40.7261774Z #6 sha256:283ac05c32e67060aa59f8a841b02df4cc0bd7fbf8d880f67d9b622e1cbd1935 16.36MB / 16.36MB 0.2s done
+build-scan-publish	Build images once	2026-10-16T12:45:40.7263799Z #6 extracting sha256:bce3d672089f7ccc5125c3f8f95542fa3971138f323fb7f77e338a14396c85aa 0.1s done
+build-scan-publish	Build images once	2026-10-16T12:45:40.8807232Z #6 sha256:e203d50c86bd38d307585d33fd69e7e7fd91e7535b65af46aa1d663cfb80c0fa 248B / 248B 0.2s done
+build-scan-publish	Build images once	2026-10-16T12:45:42.8850809Z #6 extracting sha256:283ac05c32e67060aa59f8a841b02df4cc0bd7fbf8d880f67d9b622e1cbd1935
+build-scan-publish	Build images once	2026-10-16T12:45:43.5447154Z #6 extracting sha256:283ac05c32e67060aa59f8a841b02df4cc0bd7fbf8d880f67d9b622e1cbd1935 0.6s done
+build-scan-publish	Build images once	2026-10-16T12:45:43.5448309Z #6 extracting sha256:e203d50c86bd38d307585d33fd69e7e7fd91e7535b65af46aa1d663cfb80c0fa
+build-scan-publish	Build images once	2026-10-16T12:45:43.7383730Z #6 extracting sha256:e203d50c86bd38d307585d33fd69e7e7fd91e7535b65af46aa1d663cfb80c0fa done
+build-scan-publish	Build images once	2026-10-16T12:45:43.7384954Z #6 DONE 3.1s
+build-scan-publish	Build images once	2026-10-16T12:45:43.7385498Z 
+build-scan-publish	Build images once	2026-10-16T12:45:43.7385723Z #7 [2/7] WORKDIR /app
+build-scan-publish	Build images once	2026-10-16T12:45:43.7386236Z #7 DONE 0.0s
+build-scan-publish	Build images once	2026-10-16T12:45:43.7386540Z 
+build-scan-publish	Build images once	2026-10-16T12:45:43.7386790Z #8 [3/7] COPY requirements.txt ./
+build-scan-publish	Build images once	2026-10-16T12:45:43.7387355Z #8 DONE 0.0s
+build-scan-publish	Build images once	2026-10-16T12:45:43.7387609Z 
+build-scan-publish	Build images once	2026-10-16T12:45:43.7388192Z #9 [4/7] RUN pip install --no-cache-dir -r requirements.txt && adduser -D -u 10001 appuser
+build-scan-publish	Build images once	2026-10-16T12:45:45.8610288Z #9 2.273 Collecting alembic==1.20.0 (from -r requirements.txt (line 1))
+build-scan-publish	Build images once	2026-10-16T12:45:45.9692905Z #9 2.299   Downloading alembic-1.20.0-py3-none-any.whl.metadata (7.3 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:45.9694081Z #9 2.308 Collecting annotated-doc==0.0.5 (from -r requirements.txt (line 2))
+build-scan-publish	Build images once	2026-10-16T12:45:45.9695041Z #9 2.312   Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:45.9696051Z #9 2.320 Collecting annotated-types==0.8.0 (from -r requirements.txt (line 3))
+build-scan-publish	Build images once	2026-10-16T12:45:45.9697007Z #9 2.324   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:45.9697899Z #9 2.344 Collecting anyio==4.15.1 (from -r requirements.txt (line 4))
+build-scan-publish	Build images once	2026-10-16T12:45:45.9698742Z #9 2.348   Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:45.9699513Z #9 2.366 Collecting click==8.5.0 (from -r requirements.txt (line 5))
+build-scan-publish	Build images once	2026-10-16T12:45:45.9699991Z #9 2.370   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:45.9700462Z #9 2.381 Collecting dnspython==2.9.0 (from -r requirements.txt (line 6))
+build-scan-publish	Build images once	2026-10-16T12:45:46.0773178Z #9 2.385   Downloading dnspython-2.9.0-py3-none-any.whl.metadata (5.7 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:46.0774361Z #9 2.399 Collecting email-validator==2.3.0 (from -r requirements.txt (line 7))
+build-scan-publish	Build images once	2026-10-16T12:45:46.0775365Z #9 2.403   Downloading email_validator-2.3.0-py3-none-any.whl.metadata (26 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:46.0776312Z #9 2.465 Collecting fastapi==0.143.2 (from -r requirements.txt (line 8))
+build-scan-publish	Build images once	2026-10-16T12:45:46.0777259Z #9 2.469   Downloading fastapi-0.143.2-py3-none-any.whl.metadata (26 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:46.0778136Z #9 2.489 Collecting h11==0.16.0 (from -r requirements.txt (line 9))
+build-scan-publish	Build images once	2026-10-16T12:45:46.1779600Z #9 2.493   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:46.1780512Z #9 2.506 Collecting idna==3.20 (from -r requirements.txt (line 10))
+build-scan-publish	Build images once	2026-10-16T12:45:46.1781375Z #9 2.509   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:46.1782475Z #9 2.525 Collecting mako==1.4.3 (from -r requirements.txt (line 11))
+build-scan-publish	Build images once	2026-10-16T12:45:46.1783324Z #9 2.529   Downloading mako-1.4.3-py3-none-any.whl.metadata (2.9 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:46.1784118Z #9 2.590 Collecting markupsafe==3.0.4 (from -r requirements.txt (line 12))
+build-scan-publish	Build images once	2026-10-16T12:45:46.2797034Z #9 2.594   Downloading markupsafe-3.0.4-cp312-cp312-musllinux_1_2_x86_64.whl.metadata (2.7 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:46.2799212Z #9 2.613 Collecting opentelemetry-api==1.45.1 (from -r requirements.txt (line 13))
+build-scan-publish	Build images once	2026-10-16T12:45:46.2800462Z #9 2.617   Downloading opentelemetry_api-1.45.1-py3-none-any.whl.metadata (1.4 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:46.2801897Z #9 2.630 Collecting prometheus-client==0.26.0 (from -r requirements.txt (line 14))
+build-scan-publish	Build images once	2026-10-16T12:45:46.2803777Z #9 2.633   Downloading prometheus_client-0.26.0-py3-none-any.whl.metadata (2.1 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:46.2805199Z #9 2.670 Collecting prometheus-fastapi-instrumentator==8.1.0 (from -r requirements.txt (line 15))
+build-scan-publish	Build images once	2026-10-16T12:45:46.2807015Z #9 2.675   Downloading prometheus_fastapi_instrumentator-8.1.0-py3-none-any.whl.metadata (13 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:46.2808709Z #9 2.692 Collecting psycopg==3.3.6 (from -r requirements.txt (line 16))
+build-scan-publish	Build images once	2026-10-16T12:45:46.4337002Z #9 2.695   Downloading psycopg-3.3.6-py3-none-any.whl.metadata (4.4 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:46.4495075Z #9 2.862 Collecting psycopg-binary==3.3.6 (from -r requirements.txt (line 17))
+build-scan-publish	Build images once	2026-10-16T12:45:46.5707731Z #9 2.867   Downloading psycopg_binary-3.3.6-cp312-cp312-musllinux_1_2_x86_64.whl.metadata (2.7 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:46.5709003Z #9 2.983 Collecting pydantic==2.14.1 (from -r requirements.txt (line 18))
+build-scan-publish	Build images once	2026-10-16T12:45:46.7259100Z #9 2.987   Downloading pydantic-2.14.1-py3-none-any.whl.metadata (133 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:47.3347758Z #9 3.747 Collecting pydantic-core==2.50.1 (from -r requirements.txt (line 19))
+build-scan-publish	Build images once	2026-10-16T12:45:47.5272986Z #9 3.751   Downloading pydantic_core-2.50.1-cp312-cp312-musllinux_1_1_x86_64.whl.metadata (6.5 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:47.5274203Z #9 3.765 Collecting pydantic-settings==2.16.0 (from -r requirements.txt (line 20))
+build-scan-publish	Build images once	2026-10-16T12:45:47.5275233Z #9 3.769   Downloading pydantic_settings-2.16.0-py3-none-any.whl.metadata (4.0 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:47.5276204Z #9 3.785 Collecting python-dotenv==1.2.4 (from -r requirements.txt (line 21))
+build-scan-publish	Build images once	2026-10-16T12:45:47.5277180Z #9 3.789   Downloading python_dotenv-1.2.4-py3-none-any.whl.metadata (29 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:47.6924957Z #9 4.105 Collecting sqlalchemy==2.1.4 (from -r requirements.txt (line 22))
+build-scan-publish	Build images once	2026-10-16T12:45:47.8034412Z #9 4.110   Downloading sqlalchemy-2.1.4-cp312-cp312-musllinux_1_2_x86_64.whl.metadata (9.7 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:47.8035255Z #9 4.151 Collecting starlette==1.8.0 (from -r requirements.txt (line 23))
+build-scan-publish	Build images once	2026-10-16T12:45:47.8035909Z #9 4.154   Downloading starlette-1.8.0-py3-none-any.whl.metadata (6.6 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:47.8036597Z #9 4.172 Collecting typing-extensions==4.16.0 (from -r requirements.txt (line 24))
+build-scan-publish	Build images once	2026-10-16T12:45:47.8037324Z #9 4.175   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:47.8038029Z #9 4.183 Collecting typing-inspection==0.4.4 (from -r requirements.txt (line 25))
+build-scan-publish	Build images once	2026-10-16T12:45:47.8038723Z #9 4.187   Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:47.8039400Z #9 4.216 Collecting uvicorn==0.54.0 (from -r requirements.txt (line 26))
+build-scan-publish	Build images once	2026-10-16T12:45:47.9576649Z #9 4.219   Downloading uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:48.0006043Z #9 4.413 Downloading alembic-1.20.0-py3-none-any.whl (268 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:48.2129786Z #9 4.418 Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:48.2130530Z #9 4.422 Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:48.2131135Z #9 4.426 Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:48.2131681Z #9 4.429 Downloading click-8.5.0-py3-none-any.whl (125 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:48.2132533Z #9 4.433 Downloading dnspython-2.9.0-py3-none-any.whl (354 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:48.2133131Z #9 4.438 Downloading email_validator-2.3.0-py3-none-any.whl (35 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:48.2133723Z #9 4.441 Downloading fastapi-0.143.2-py3-none-any.whl (144 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:48.2134260Z #9 4.445 Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:48.2134788Z #9 4.449 Downloading idna-3.20-py3-none-any.whl (69 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:48.2135286Z #9 4.452 Downloading mako-1.4.3-py3-none-any.whl (80 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:48.2136436Z #9 4.455 Downloading markupsafe-3.0.4-cp312-cp312-musllinux_1_2_x86_64.whl (23 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:48.2137172Z #9 4.459 Downloading opentelemetry_api-1.45.1-py3-none-any.whl (60 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:48.2137840Z #9 4.462 Downloading prometheus_client-0.26.0-py3-none-any.whl (64 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:48.2138574Z #9 4.466 Downloading prometheus_fastapi_instrumentator-8.1.0-py3-none-any.whl (19 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:48.2139324Z #9 4.469 Downloading psycopg-3.3.6-py3-none-any.whl (215 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:48.2139991Z #9 4.474 Downloading psycopg_binary-3.3.6-cp312-cp312-musllinux_1_2_x86_64.whl (4.3 MB)
+build-scan-publish	Build images once	2026-10-16T12:45:48.6164000Z #9 4.820    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 11.9 MB/s eta 0:00:00
+build-scan-publish	Build images once	2026-10-16T12:45:48.6164955Z #9 4.824 Downloading pydantic-2.14.1-py3-none-any.whl (488 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:48.6166402Z #9 4.829 Downloading pydantic_core-2.50.1-cp312-cp312-musllinux_1_1_x86_64.whl (2.5 MB)
+build-scan-publish	Build images once	2026-10-16T12:45:48.6167558Z #9 4.841    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 276.7 MB/s eta 0:00:00
+build-scan-publish	Build images once	2026-10-16T12:45:48.6168476Z #9 4.845 Downloading pydantic_settings-2.16.0-py3-none-any.whl (80 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:48.6169343Z #9 4.849 Downloading python_dotenv-1.2.4-py3-none-any.whl (23 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:48.6170362Z #9 4.854 Downloading sqlalchemy-2.1.4-cp312-cp312-musllinux_1_2_x86_64.whl (4.7 MB)
+build-scan-publish	Build images once	2026-10-16T12:45:48.6171706Z #9 4.880    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 185.6 MB/s eta 0:00:00
+build-scan-publish	Build images once	2026-10-16T12:45:48.6172780Z #9 4.884 Downloading starlette-1.8.0-py3-none-any.whl (79 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:48.6173617Z #9 4.888 Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:48.6174502Z #9 4.891 Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:48.6175382Z #9 4.895 Downloading uvicorn-0.54.0-py3-none-any.whl (87 kB)
+build-scan-publish	Build images once	2026-10-16T12:45:48.6178406Z #9 5.028 Installing collected packages: typing-extensions, python-dotenv, psycopg-binary, prometheus-client, markupsafe, idna, h11, dnspython, click, annotated-types, annotated-doc, uvicorn, typing-inspection, sqlalchemy, pydantic-core, psycopg, opentelemetry-api, mako, email-validator, anyio, starlette, pydantic, alembic, pydantic-settings, prometheus-fastapi-instrumentator, fastapi
+build-scan-publish	Build images once	2026-10-16T12:45:53.4194715Z #9 9.831 Successfully installed alembic-1.20.0 annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.15.1 click-8.5.0 dnspython-2.9.0 email-validator-2.3.0 fastapi-0.143.2 h11-0.16.0 idna-3.20 mako-1.4.3 markupsafe-3.0.4 opentelemetry-api-1.45.1 prometheus-client-0.26.0 prometheus-fastapi-instrumentator-8.1.0 psycopg-3.3.6 psycopg-binary-3.3.6 pydantic-2.14.1 pydantic-core-2.50.1 pydantic-settings-2.16.0 python-dotenv-1.2.4 sqlalchemy-2.1.4 starlette-1.8.0 typing-extensions-4.16.0 typing-inspection-0.4.4 uvicorn-0.54.0
+build-scan-publish	Build images once	2026-10-16T12:45:53.6365961Z #9 9.832 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+build-scan-publish	Build images once	2026-10-16T12:45:53.6369144Z #9 9.898 
+build-scan-publish	Build images once	2026-10-16T12:45:53.6369886Z #9 9.898 [notice] A new release of pip is available: 25.0.1 -> 26.2.1
+build-scan-publish	Build images once	2026-10-16T12:45:53.6370915Z #9 9.898 [notice] To update, run: pip install --upgrade pip
+build-scan-publish	Build images once	2026-10-16T12:45:53.7184207Z #9 DONE 10.1s
+build-scan-publish	Build images once	2026-10-16T12:45:53.8991137Z 
+build-scan-publish	Build images once	2026-10-16T12:45:53.9023156Z #10 [5/7] COPY alembic.ini ./
+build-scan-publish	Build images once	2026-10-16T12:45:53.9024051Z #10 DONE 0.0s
+build-scan-publish	Build images once	2026-10-16T12:45:53.9024428Z 
+build-scan-publish	Build images once	2026-10-16T12:45:53.9024619Z #11 [6/7] COPY alembic ./alembic
+build-scan-publish	Build images once	2026-10-16T12:45:53.9025048Z #11 DONE 0.0s
+build-scan-publish	Build images once	2026-10-16T12:45:53.9025247Z 
+build-scan-publish	Build images once	2026-10-16T12:45:53.9025396Z #12 [7/7] COPY app ./app
+build-scan-publish	Build images once	2026-10-16T12:45:53.9025777Z #12 DONE 0.0s
+build-scan-publish	Build images once	2026-10-16T12:45:53.9025994Z 
+build-scan-publish	Build images once	2026-10-16T12:45:53.9026147Z #13 exporting to image
+build-scan-publish	Build images once	2026-10-16T12:45:53.9026517Z #13 exporting layers
+build-scan-publish	Build images once	2026-10-16T12:45:54.4629112Z #13 exporting layers 0.7s done
+build-scan-publish	Build images once	2026-10-16T12:45:54.4795333Z #13 writing image sha256:f0e86b2531151a5fa3994ac47d4bca93ae7a6bd4f87b2c98d648be94f05b0d82 done
+build-scan-publish	Build images once	2026-10-16T12:45:54.4796801Z #13 naming to ghcr.io/aj5831a/campusdesk-backend:c85837a512e8bc1a9866396632e2da2bd9c2d787 done
+build-scan-publish	Build images once	2026-10-16T12:45:54.4797798Z #13 DONE 0.7s
+build-scan-publish	Build images once	2026-10-16T12:45:54.7519267Z #0 building with "default" instance using docker driver
+build-scan-publish	Build images once	2026-10-16T12:45:54.7519672Z 
+build-scan-publish	Build images once	2026-10-16T12:45:54.7519853Z #1 [internal] load build definition from Dockerfile
+build-scan-publish	Build images once	2026-10-16T12:45:54.7520272Z #1 transferring dockerfile: 523B done
+build-scan-publish	Build images once	2026-10-16T12:45:54.7520616Z #1 DONE 0.0s
+build-scan-publish	Build images once	2026-10-16T12:45:54.7520763Z 
+build-scan-publish	Build images once	2026-10-16T12:45:54.7521328Z #2 [internal] load metadata for docker.io/library/node:22-alpine@sha256:0a7108bf6c7bf5de370ffb1a3ed6be93d405b43ff159f681a8d18c0e2bc2e402
+build-scan-publish	Build images once	2026-10-16T12:45:54.9650865Z #2 ...
+build-scan-publish	Build images once	2026-10-16T12:45:54.9651240Z 
+build-scan-publish	Build images once	2026-10-16T12:45:54.9651611Z #3 [auth] library/node:pull token for registry-1.docker.io
+build-scan-publish	Build images once	2026-10-16T12:45:54.9652503Z #3 DONE 0.0s
+build-scan-publish	Build images once	2026-10-16T12:45:54.9652678Z 
+build-scan-publish	Build images once	2026-10-16T12:45:54.9652925Z #4 [auth] library/nginx:pull token for registry-1.docker.io
+build-scan-publish	Build images once	2026-10-16T12:45:54.9653387Z #4 DONE 0.0s
+build-scan-publish	Build images once	2026-10-16T12:45:55.1153976Z 
+build-scan-publish	Build images once	2026-10-16T12:45:55.1155657Z #5 [internal] load metadata for docker.io/library/nginx:stable-alpine@sha256:970364228b1e4f932abc22d321932816782cca8a20b85a77552a7cfe9acfb3b5
+build-scan-publish	Build images once	2026-10-16T12:45:55.4347424Z #5 ...
+build-scan-publish	Build images once	2026-10-16T12:45:55.4347802Z 
+build-scan-publish	Build images once	2026-10-16T12:45:55.4348643Z #2 [internal] load metadata for docker.io/library/node:22-alpine@sha256:0a7108bf6c7bf5de370ffb1a3ed6be93d405b43ff159f681a8d18c0e2bc2e402
+build-scan-publish	Build images once	2026-10-16T12:45:55.4349552Z #2 DONE 0.8s
+build-scan-publish	Build images once	2026-10-16T12:45:55.6233969Z 
+build-scan-publish	Build images once	2026-10-16T12:45:55.6235348Z #5 [internal] load metadata for docker.io/library/nginx:stable-alpine@sha256:970364228b1e4f932abc22d321932816782cca8a20b85a77552a7cfe9acfb3b5
+build-scan-publish	Build images once	2026-10-16T12:45:55.6236360Z #5 DONE 0.9s
+build-scan-publish	Build images once	2026-10-16T12:45:55.6236527Z 
+build-scan-publish	Build images once	2026-10-16T12:45:55.6236671Z #6 [internal] load .dockerignore
+build-scan-publish	Build images once	2026-10-16T12:45:55.6237049Z #6 transferring context: 76B done
+build-scan-publish	Build images once	2026-10-16T12:45:55.6237397Z #6 DONE 0.0s
+build-scan-publish	Build images once	2026-10-16T12:45:55.6237566Z 
+build-scan-publish	Build images once	2026-10-16T12:45:55.6237694Z #7 [internal] load build context
+build-scan-publish	Build images once	2026-10-16T12:45:55.6238000Z #7 transferring context: 46.96kB done
+build-scan-publish	Build images once	2026-10-16T12:45:55.6238289Z #7 DONE 0.0s
+build-scan-publish	Build images once	2026-10-16T12:45:55.6238416Z 
+build-scan-publish	Build images once	2026-10-16T12:45:55.6238852Z #8 [build 1/7] FROM docker.io/library/node:22-alpine@sha256:0a7108bf6c7bf5de370ffb1a3ed6be93d405b43ff159f681a8d18c0e2bc2e402
+build-scan-publish	Build images once	2026-10-16T12:45:55.6239806Z #8 resolve docker.io/library/node:22-alpine@sha256:0a7108bf6c7bf5de370ffb1a3ed6be93d405b43ff159f681a8d18c0e2bc2e402 done
+build-scan-publish	Build images once	2026-10-16T12:45:55.6240848Z #8 sha256:0a7108bf6c7bf5de370ffb1a3ed6be93d405b43ff159f681a8d18c0e2bc2e402 6.41kB / 6.41kB done
+build-scan-publish	Build images once	2026-10-16T12:45:55.6241661Z #8 sha256:2c752226d477b4a886378baa95b9af252be59301b725fdb0b7e15208131505a8 1.72kB / 1.72kB done
+build-scan-publish	Build images once	2026-10-16T12:45:55.6242628Z #8 sha256:7c3b093add7c43400ee83b815ab2cda98794a10045bcf76ce9bb2f89b97cbc5c 6.48kB / 6.48kB done
+build-scan-publish	Build images once	2026-10-16T12:45:55.6243346Z #8 sha256:f7f2d304681aaa935c9cfd180850cf616ae843efce7682873d6521ded7268937 0B / 55.59MB 0.1s
+build-scan-publish	Build images once	2026-10-16T12:45:55.6244039Z #8 sha256:e554276b05e6306c5ad33cd85bfa7f0693083e21f6114db5abf60a20fb413039 0B / 1.26MB 0.1s
+build-scan-publish	Build images once	2026-10-16T12:45:55.6244762Z #8 sha256:d39db1cf9caa4f49c5a2e67111fbe6e0d5eea8ede550cb82f3dc2b79712688d6 447B / 447B 0.1s done
+build-scan-publish	Build images once	2026-10-16T12:45:55.8063725Z #8 sha256:e554276b05e6306c5ad33cd85bfa7f0693083e21f6114db5abf60a20fb413039 1.26MB / 1.26MB 0.2s done
+build-scan-publish	Build images once	2026-10-16T12:45:55.9409161Z #8 sha256:f7f2d304681aaa935c9cfd180850cf616ae843efce7682873d6521ded7268937 50.33MB / 55.59MB 0.4s
+build-scan-publish	Build images once	2026-10-16T12:45:56.0832811Z #8 sha256:f7f2d304681aaa935c9cfd180850cf616ae843efce7682873d6521ded7268937 55.59MB / 55.59MB 0.4s done
+build-scan-publish	Build images once	2026-10-16T12:45:56.0834115Z #8 extracting sha256:f7f2d304681aaa935c9cfd180850cf616ae843efce7682873d6521ded7268937 0.1s
+build-scan-publish	Build images once	2026-10-16T12:45:56.9890599Z #8 ...
+build-scan-publish	Build images once	2026-10-16T12:45:56.9891051Z 
+build-scan-publish	Build images once	2026-10-16T12:45:56.9893114Z #9 [stage-1 1/3] FROM docker.io/library/nginx:stable-alpine@sha256:970364228b1e4f932abc22d321932816782cca8a20b85a77552a7cfe9acfb3b5
+build-scan-publish	Build images once	2026-10-16T12:45:56.9894332Z #9 resolve docker.io/library/nginx:stable-alpine@sha256:970364228b1e4f932abc22d321932816782cca8a20b85a77552a7cfe9acfb3b5 done
+build-scan-publish	Build images once	2026-10-16T12:45:56.9895846Z #9 sha256:970364228b1e4f932abc22d321932816782cca8a20b85a77552a7cfe9acfb3b5 10.32kB / 10.32kB done
+build-scan-publish	Build images once	2026-10-16T12:45:56.9896630Z #9 sha256:b40d04ac48f7946b98c936ccbb07daf62cd6b4c63c41bcba0196d02866163bbe 4.36MB / 4.36MB 0.2s done
+build-scan-publish	Build images once	2026-10-16T12:45:56.9897388Z #9 sha256:959ae6b898852db82e5b29b929388e59914f42be0a8f4d44c89a4c1f53b49208 2.49kB / 2.49kB done
+build-scan-publish	Build images once	2026-10-16T12:45:56.9898136Z #9 sha256:0d831f5435ede3eeaba5768270c9e6f542d58306f69bb61f148e5c2374b57c56 12.30kB / 12.30kB done
+build-scan-publish	Build images once	2026-10-16T12:45:56.9898878Z #9 extracting sha256:b40d04ac48f7946b98c936ccbb07daf62cd6b4c63c41bcba0196d02866163bbe 0.1s done
+build-scan-publish	Build images once	2026-10-16T12:45:56.9899616Z #9 sha256:258d8d3acc3e2a26bba074c3994d9ded71ac95a550ff756983e12b7cc8c86025 964B / 964B 0.3s done
+build-scan-publish	Build images once	2026-10-16T12:45:56.9900930Z #9 sha256:a9bafeab4f16557b40bed8af8bcb4e3d2a50a3ebf922d8a47552997a9c6a7d0a 628B / 628B 0.2s done
+build-scan-publish	Build images once	2026-10-16T12:45:56.9902144Z #9 sha256:7b5202971cfe9d7ea3d5e50c27042a2ebac63194d6691506cb9d3a8c0ea81e4c 404B / 404B 0.4s done
+build-scan-publish	Build images once	2026-10-16T12:45:56.9903241Z #9 sha256:f6591080e8dd90768d164b2d35e440e00bf94dca94a6e429a57c4fddd19bb5d9 1.21kB / 1.21kB 0.4s done
+build-scan-publish	Build images once	2026-10-16T12:45:56.9903927Z #9 sha256:9aab0913f3044d021b69c7b998f5373994336765dd510256c02e90e5ccc347de 1.40kB / 1.40kB 0.5s done
+build-scan-publish	Build images once	2026-10-16T12:45:56.9904575Z #9 extracting sha256:a9bafeab4f16557b40bed8af8bcb4e3d2a50a3ebf922d8a47552997a9c6a7d0a done
+build-scan-publish	Build images once	2026-10-16T12:45:56.9905709Z #9 extracting sha256:258d8d3acc3e2a26bba074c3994d9ded71ac95a550ff756983e12b7cc8c86025 done
+build-scan-publish	Build images once	2026-10-16T12:45:56.9906822Z #9 extracting sha256:7b5202971cfe9d7ea3d5e50c27042a2ebac63194d6691506cb9d3a8c0ea81e4c done
+build-scan-publish	Build images once	2026-10-16T12:45:56.9907685Z #9 extracting sha256:f6591080e8dd90768d164b2d35e440e00bf94dca94a6e429a57c4fddd19bb5d9 done
+build-scan-publish	Build images once	2026-10-16T12:45:56.9908293Z #9 extracting sha256:9aab0913f3044d021b69c7b998f5373994336765dd510256c02e90e5ccc347de done
+build-scan-publish	Build images once	2026-10-16T12:45:56.9908917Z #9 sha256:28929cdf5be0fd764b759a1469570a6ca74c1eb000707f43dd8dc2d68657e8d0 20.31MB / 20.31MB 0.6s done
+build-scan-publish	Build images once	2026-10-16T12:45:56.9909577Z #9 extracting sha256:28929cdf5be0fd764b759a1469570a6ca74c1eb000707f43dd8dc2d68657e8d0 0.4s done
+build-scan-publish	Build images once	2026-10-16T12:45:56.9910231Z #9 DONE 1.4s
+build-scan-publish	Build images once	2026-10-16T12:45:56.9910363Z 
+build-scan-publish	Build images once	2026-10-16T12:45:56.9910744Z #8 [build 1/7] FROM docker.io/library/node:22-alpine@sha256:0a7108bf6c7bf5de370ffb1a3ed6be93d405b43ff159f681a8d18c0e2bc2e402
+build-scan-publish	Build images once	2026-10-16T12:45:57.5461231Z #8 extracting sha256:f7f2d304681aaa935c9cfd180850cf616ae843efce7682873d6521ded7268937 1.5s done
+build-scan-publish	Build images once	2026-10-16T12:45:57.5463881Z #8 extracting sha256:e554276b05e6306c5ad33cd85bfa7f0693083e21f6114db5abf60a20fb413039 0.0s done
+build-scan-publish	Build images once	2026-10-16T12:45:57.5464893Z #8 extracting sha256:d39db1cf9caa4f49c5a2e67111fbe6e0d5eea8ede550cb82f3dc2b79712688d6
+build-scan-publish	Build images once	2026-10-16T12:45:57.7298266Z #8 extracting sha256:d39db1cf9caa4f49c5a2e67111fbe6e0d5eea8ede550cb82f3dc2b79712688d6 done
+build-scan-publish	Build images once	2026-10-16T12:45:57.7299308Z #8 DONE 2.1s
+build-scan-publish	Build images once	2026-10-16T12:45:57.7299585Z 
+build-scan-publish	Build images once	2026-10-16T12:45:57.7299753Z #10 [build 2/7] WORKDIR /app
+build-scan-publish	Build images once	2026-10-16T12:45:57.7300208Z #10 DONE 0.0s
+build-scan-publish	Build images once	2026-10-16T12:45:57.7300405Z 
+build-scan-publish	Build images once	2026-10-16T12:45:57.7300647Z #11 [build 3/7] COPY package.json package-lock.json ./
+build-scan-publish	Build images once	2026-10-16T12:45:57.7301169Z #11 DONE 0.0s
+build-scan-publish	Build images once	2026-10-16T12:45:57.7301365Z 
+build-scan-publish	Build images once	2026-10-16T12:45:57.7301508Z #12 [build 4/7] RUN npm ci
+build-scan-publish	Build images once	2026-10-16T12:45:59.0696361Z #12 1.491 
+build-scan-publish	Build images once	2026-10-16T12:45:59.0697391Z #12 1.491 added 19 packages, and audited 20 packages in 1s
+build-scan-publish	Build images once	2026-10-16T12:45:59.0698262Z #12 1.491 
+build-scan-publish	Build images once	2026-10-16T12:45:59.1884433Z #12 1.491 8 packages are looking for funding
+build-scan-publish	Build images once	2026-10-16T12:45:59.1892646Z #12 1.491   run `npm fund` for details
+build-scan-publish	Build images once	2026-10-16T12:45:59.1893420Z #12 1.492 
+build-scan-publish	Build images once	2026-10-16T12:45:59.1894048Z #12 1.492 found 0 vulnerabilities
+build-scan-publish	Build images once	2026-10-16T12:45:59.1894548Z #12 1.493 npm notice
+build-scan-publish	Build images once	2026-10-16T12:45:59.1895462Z #12 1.493 npm notice New major version of npm available! 10.9.9 -> 12.2.0
+build-scan-publish	Build images once	2026-10-16T12:45:59.1896566Z #12 1.493 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+build-scan-publish	Build images once	2026-10-16T12:45:59.1898157Z #12 1.493 npm notice To update run: npm install -g npm@12.2.0
+build-scan-publish	Build images once	2026-10-16T12:45:59.1899141Z #12 1.493 npm notice
+build-scan-publish	Build images once	2026-10-16T12:45:59.1899520Z #12 DONE 1.6s
+build-scan-publish	Build images once	2026-10-16T12:45:59.3635636Z 
+build-scan-publish	Build images once	2026-10-16T12:45:59.3636586Z #13 [build 5/7] COPY index.html vite.config.js ./
+build-scan-publish	Build images once	2026-10-16T12:45:59.3637261Z #13 DONE 0.0s
+build-scan-publish	Build images once	2026-10-16T12:45:59.3637513Z 
+build-scan-publish	Build images once	2026-10-16T12:45:59.3637680Z #14 [build 6/7] COPY src ./src
+build-scan-publish	Build images once	2026-10-16T12:45:59.3638186Z #14 DONE 0.0s
+build-scan-publish	Build images once	2026-10-16T12:45:59.3638415Z 
+build-scan-publish	Build images once	2026-10-16T12:45:59.3638583Z #15 [build 7/7] RUN npm run build
+build-scan-publish	Build images once	2026-10-16T12:45:59.4675711Z #15 0.255 
+build-scan-publish	Build images once	2026-10-16T12:45:59.4676308Z #15 0.255 > campusdesk-frontend@1.0.0 build
+build-scan-publish	Build images once	2026-10-16T12:45:59.4676910Z #15 0.255 > vite build
+build-scan-publish	Build images once	2026-10-16T12:45:59.4677302Z #15 0.255 
+build-scan-publish	Build images once	2026-10-16T12:45:59.7860241Z #15 0.573 vite v8.3.4 building client environment for production...
+build-scan-publish	Build images once	2026-10-16T12:45:59.8891376Z #15 0.588 transforming...
+build-scan-publish	Build images once	2026-10-16T12:45:59.8892451Z #15 0.651 ✓ 18 modules transformed.
+build-scan-publish	Build images once	2026-10-16T12:45:59.8892805Z #15 0.676 rendering chunks...
+build-scan-publish	Build images once	2026-10-16T12:45:59.9933882Z #15 0.714 computing gzip size...
+build-scan-publish	Build images once	2026-10-16T12:45:59.9935327Z #15 0.716 dist/index.html                   0.46 kB │ gzip:  0.30 kB
+build-scan-publish	Build images once	2026-10-16T12:45:59.9943374Z #15 0.716 dist/assets/index-CQcoK_bS.css    6.20 kB │ gzip:  2.12 kB
+build-scan-publish	Build images once	2026-10-16T12:45:59.9945845Z #15 0.716 dist/assets/index-DEaFGXCI.js   229.07 kB │ gzip: 71.70 kB
+build-scan-publish	Build images once	2026-10-16T12:45:59.9947055Z #15 0.716 
+build-scan-publish	Build images once	2026-10-16T12:45:59.9947693Z #15 0.717 ✓ built in 142ms
+build-scan-publish	Build images once	2026-10-16T12:45:59.9948299Z #15 DONE 0.7s
+build-scan-publish	Build images once	2026-10-16T12:45:59.9948709Z 
+build-scan-publish	Build images once	2026-10-16T12:45:59.9949369Z #16 [stage-1 2/3] COPY --from=build /app/dist /usr/share/nginx/html
+build-scan-publish	Build images once	2026-10-16T12:45:59.9950481Z #16 DONE 0.0s
+build-scan-publish	Build images once	2026-10-16T12:46:00.1578702Z 
+build-scan-publish	Build images once	2026-10-16T12:46:00.1579388Z #17 [stage-1 3/3] COPY nginx.conf /etc/nginx/nginx.conf
+build-scan-publish	Build images once	2026-10-16T12:46:00.1579946Z #17 DONE 0.0s
+build-scan-publish	Build images once	2026-10-16T12:46:00.1580251Z 
+build-scan-publish	Build images once	2026-10-16T12:46:00.1580381Z #18 exporting to image
+build-scan-publish	Build images once	2026-10-16T12:46:00.1580720Z #18 exporting layers
+build-scan-publish	Build images once	2026-10-16T12:46:01.0065206Z #18 exporting layers 1.0s done
+build-scan-publish	Build images once	2026-10-16T12:46:01.0220403Z #18 writing image sha256:3531ca29dc3f0bd712f4540361e432436ec19d98c7d83a051ab8a0fc00c79740 done
+build-scan-publish	Build images once	2026-10-16T12:46:01.0221662Z #18 naming to ghcr.io/aj5831a/campusdesk-frontend:c85837a512e8bc1a9866396632e2da2bd9c2d787 done
+build-scan-publish	Build images once	2026-10-16T12:46:01.0222642Z #18 DONE 1.0s
+build-scan-publish	Scan both images with Trivy	﻿2026-10-16T12:46:01.0313936Z ##[group]Run mkdir -p reports
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:01.0314304Z ^[[36;1mmkdir -p reports^[[0m
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:01.0314568Z ^[[36;1mbackend_status=0^[[0m
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:01.0314811Z ^[[36;1mfrontend_status=0^[[0m
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:01.0316244Z ^[[36;1mdocker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v "$PWD/reports:/reports" -v trivy-cache:/root/.cache/ aquasec/trivy:0.76.0@sha256:2416d1f74045b57274df1a340eee6b510cacd73c66a6ccb8da092b117eb7d222 image --scanners vuln --severity HIGH,CRITICAL --exit-code 1 --format table --output /reports/backend.txt "$BACKEND_IMAGE" || backend_status=$?^[[0m
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:01.0318849Z ^[[36;1mdocker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v "$PWD/reports:/reports" -v trivy-cache:/root/.cache/ aquasec/trivy:0.76.0@sha256:2416d1f74045b57274df1a340eee6b510cacd73c66a6ccb8da092b117eb7d222 image --scanners vuln --severity HIGH,CRITICAL --exit-code 1 --format table --output /reports/frontend.txt "$FRONTEND_IMAGE" || frontend_status=$?^[[0m
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:01.0320244Z ^[[36;1mcat reports/*.txt^[[0m
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:01.0320622Z ^[[36;1mtest "$backend_status" -eq 0 && test "$frontend_status" -eq 0^[[0m
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:01.0387520Z shell: /usr/bin/bash -e {0}
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:01.0387787Z env:
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:01.0388180Z   BACKEND_IMAGE: ghcr.io/aj5831a/campusdesk-backend:c85837a512e8bc1a9866396632e2da2bd9c2d787
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:01.0388860Z   FRONTEND_IMAGE: ghcr.io/aj5831a/campusdesk-frontend:c85837a512e8bc1a9866396632e2da2bd9c2d787
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:01.0389331Z ##[endgroup]
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:01.0637055Z Unable to find image 'aquasec/trivy:0.76.0@sha256:2416d1f74045b57274df1a340eee6b510cacd73c66a6ccb8da092b117eb7d222' locally
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:01.6445145Z docker.io/aquasec/trivy@sha256:2416d1f74045b57274df1a340eee6b510cacd73c66a6ccb8da092b117eb7d222: Pulling from aquasec/trivy
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:01.9108675Z e2de96513ba9: Already exists
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:01.9125667Z 404cb589430b: Pulling fs layer
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:01.9126216Z 2f5cf6d3a5d1: Pulling fs layer
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:01.9126662Z 28e25cc2c5e5: Pulling fs layer
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:02.1212685Z 28e25cc2c5e5: Download complete
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:02.1630083Z 404cb589430b: Verifying Checksum
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:02.1630707Z 404cb589430b: Download complete
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:02.3119473Z 2f5cf6d3a5d1: Verifying Checksum
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:02.3119985Z 2f5cf6d3a5d1: Download complete
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:02.4142343Z 404cb589430b: Pull complete
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:03.2977118Z 2f5cf6d3a5d1: Pull complete
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:03.3115977Z 28e25cc2c5e5: Pull complete
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:03.3150123Z Digest: sha256:2416d1f74045b57274df1a340eee6b510cacd73c66a6ccb8da092b117eb7d222
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:03.3156143Z Status: Downloaded newer image for aquasec/trivy@sha256:2416d1f74045b57274df1a340eee6b510cacd73c66a6ccb8da092b117eb7d222
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:03.5378813Z 2026-10-16T12:46:03Z	INFO	[vulndb] Need to update DB
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:03.5380257Z 2026-10-16T12:46:03Z	INFO	[vulndb] Downloading vulnerability DB...
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:03.5383532Z 2026-10-16T12:46:03Z	INFO	[vulndb] Downloading artifact...	repo="mirror.gcr.io/aquasec/trivy-db:2"
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:09.1365752Z 1.72 MiB / 128.03 MiB [>_____________________________________________________________] 1.34% ? p/s ?23.52 MiB / 128.03 MiB [----------->________________________________________________] 18.37% ? p/s ?54.43 MiB / 128.03 MiB [------------------------->__________________________________] 42.51% ? p/s ?85.95 MiB / 128.03 MiB [------------------------------>_______________] 67.13% 140.42 MiB p/s ETA 0s117.54 MiB / 128.03 MiB [----------------------------------------->___] 91.81% 140.42 MiB p/s ETA 0s128.03 MiB / 128.03 MiB [------------------------------------------->] 100.00% 140.42 MiB p/s ETA 0s128.03 MiB / 128.03 MiB [------------------------------------------->] 100.00% 135.88 MiB p/s ETA 0s128.03 MiB / 128.03 MiB [------------------------------------------->] 100.00% 135.88 MiB p/s ETA 0s128.03 MiB / 128.03 MiB [------------------------------------------->] 100.00% 135.88 MiB p/s ETA 0s128.03 MiB / 128.03 MiB [------------------------------------------->] 100.00% 127.12 MiB p/s ETA 0s128.03 MiB / 128.03 MiB [------------------------------------------->] 100.00% 127.12 MiB p/s ETA 0s128.03 MiB / 128.03 MiB [------------------------------------------->] 100.00% 127.12 MiB p/s ETA 0s128.03 MiB / 128.03 MiB [------------------------------------------->] 100.00% 118.92 MiB p/s ETA 0s128.03 MiB / 128.03 MiB [------------------------------------------->] 100.00% 118.92 MiB p/s ETA 0s128.03 MiB / 128.03 MiB [------------------------------------------->] 100.00% 118.92 MiB p/s ETA 0s128.03 MiB / 128.03 MiB [------------------------------------------->] 100.00% 111.24 MiB p/s ETA 0s128.03 MiB / 128.03 MiB [------------------------------------------->] 100.00% 111.24 MiB p/s ETA 0s128.03 MiB / 128.03 MiB [------------------------------------------->] 100.00% 111.24 MiB p/s ETA 0s128.03 MiB / 128.03 MiB [------------------------------------------->] 100.00% 104.07 MiB p/s ETA 0s128.03 MiB / 128.03 MiB [------------------------------------------->] 100.00% 104.07 MiB p/s ETA 0s128.03 MiB / 128.03 MiB [------------------------------------------->] 100.00% 104.07 MiB p/s ETA 0s128.03 MiB / 128.03 MiB [-------------------------------------------->] 100.00% 97.35 MiB p/s ETA 0s128.03 MiB / 128.03 MiB [-----------------------------------------------] 100.00% 29.12 MiB p/s 4.6s2026-10-16T12:46:09Z	INFO	[vulndb] Artifact successfully downloaded	repo="mirror.gcr.io/aquasec/trivy-db:2"
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:09.1413382Z 2026-10-16T12:46:09Z	INFO	[vuln] Vulnerability scanning is enabled
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:13.6118939Z 2026-10-16T12:46:13Z	INFO	[python] Licenses acquired from one or more METADATA files may be subject to additional terms. Use `--debug` flag to see all affected packages.
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:13.6558847Z 2026-10-16T12:46:13Z	INFO	Detected OS	family="alpine" version="3.24.2"
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:13.6560101Z 2026-10-16T12:46:13Z	INFO	[alpine] Detecting vulnerabilities...	os_version="3.24" repository="3.24" pkg_num=38
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:13.6590484Z 2026-10-16T12:46:13Z	INFO	Number of language-specific files	num=1
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:13.6591418Z 2026-10-16T12:46:13Z	INFO	[python-pkg] Detecting vulnerabilities...
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:13.6624521Z 2026-10-16T12:46:13Z	WARN	Using severities from other vendors for some vulnerabilities. Read https://trivy.dev/docs/v0.76/guide/scanner/vulnerability#severity-selection for details.
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:13.9634635Z 2026-10-16T12:46:13Z	INFO	[vuln] Vulnerability scanning is enabled
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.4177434Z 2026-10-16T12:46:14Z	INFO	Detected OS	family="alpine" version="3.24.2"
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.4178235Z 2026-10-16T12:46:14Z	INFO	[alpine] Detecting vulnerabilities...	os_version="3.24" repository="3.24" pkg_num=71
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.4245767Z 2026-10-16T12:46:14Z	INFO	Number of language-specific files	num=0
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.4247032Z 2026-10-16T12:46:14Z	WARN	Using severities from other vendors for some vulnerabilities. Read https://trivy.dev/docs/v0.76/guide/scanner/vulnerability#severity-selection for details.
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5098377Z 
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5099015Z Report Summary
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5119680Z 
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5120572Z ┌──────────────────────────────────────────────────────────────────────────────────┬────────────┬─────────────────┐
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5121674Z │                                      Target                                      │    Type    │ Vulnerabilities │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5123089Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5124413Z │ ghcr.io/aj5831a/campusdesk-backend:c85837a512e8bc1a9866396632e2da2bd9c2d787      │   alpine   │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5125721Z │ (alpine 3.24.2)                                                                  │            │                 │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5126916Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5128319Z │ usr/local/lib/python3.12/site-packages/alembic-1.20.0.dist-info/METADATA         │ python-pkg │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5130135Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5131582Z │ usr/local/lib/python3.12/site-packages/annotated_doc-0.0.5.dist-info/METADATA    │ python-pkg │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5133543Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5134951Z │ usr/local/lib/python3.12/site-packages/annotated_types-0.8.0.dist-info/METADATA  │ python-pkg │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5136442Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5137507Z │ usr/local/lib/python3.12/site-packages/anyio-4.15.1.dist-info/METADATA           │ python-pkg │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5138277Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5138997Z │ usr/local/lib/python3.12/site-packages/click-8.5.0.dist-info/METADATA            │ python-pkg │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5139734Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5140434Z │ usr/local/lib/python3.12/site-packages/dnspython-2.9.0.dist-info/METADATA        │ python-pkg │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5141176Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5141871Z │ usr/local/lib/python3.12/site-packages/email_validator-2.3.0.dist-info/METADATA  │ python-pkg │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5143047Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5143786Z │ usr/local/lib/python3.12/site-packages/fastapi-0.143.2.dist-info/METADATA        │ python-pkg │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5144706Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5145389Z │ usr/local/lib/python3.12/site-packages/h11-0.16.0.dist-info/METADATA             │ python-pkg │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5146135Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5146833Z │ usr/local/lib/python3.12/site-packages/idna-3.20.dist-info/METADATA              │ python-pkg │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5147587Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5148418Z │ usr/local/lib/python3.12/site-packages/mako-1.4.3.dist-info/METADATA             │ python-pkg │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5149157Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5149870Z │ usr/local/lib/python3.12/site-packages/markupsafe-3.0.4.dist-info/METADATA       │ python-pkg │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5150609Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5151308Z │ usr/local/lib/python3.12/site-packages/opentelemetry_api-1.45.1.dist-info/METAD- │ python-pkg │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5152275Z │ ATA                                                                              │            │                 │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5152993Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5153714Z │ usr/local/lib/python3.12/site-packages/pip-25.0.1.dist-info/METADATA             │ python-pkg │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5154462Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5155177Z │ usr/local/lib/python3.12/site-packages/prometheus_client-0.26.0.dist-info/METAD- │ python-pkg │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5155833Z │ ATA                                                                              │            │                 │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5156420Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5157156Z │ usr/local/lib/python3.12/site-packages/prometheus_fastapi_instrumentator-8.1.0.- │ python-pkg │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5157858Z │ dist-info/METADATA                                                               │            │                 │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5158503Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5159197Z │ usr/local/lib/python3.12/site-packages/psycopg-3.3.6.dist-info/METADATA          │ python-pkg │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5160095Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5160786Z │ usr/local/lib/python3.12/site-packages/psycopg_binary-3.3.6.dist-info/METADATA   │ python-pkg │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5161526Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5162658Z │ usr/local/lib/python3.12/site-packages/pydantic-2.14.1.dist-info/METADATA        │ python-pkg │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5163437Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5164313Z │ usr/local/lib/python3.12/site-packages/pydantic_core-2.50.1.dist-info/METADATA   │ python-pkg │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5165050Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5165766Z │ usr/local/lib/python3.12/site-packages/pydantic_settings-2.16.0.dist-info/METAD- │ python-pkg │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5166420Z │ ATA                                                                              │            │                 │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5167063Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5167756Z │ usr/local/lib/python3.12/site-packages/python_dotenv-1.2.4.dist-info/METADATA    │ python-pkg │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5168497Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5169205Z │ usr/local/lib/python3.12/site-packages/sqlalchemy-2.1.4.dist-info/METADATA       │ python-pkg │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5169942Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5170765Z │ usr/local/lib/python3.12/site-packages/starlette-1.8.0.dist-info/METADATA        │ python-pkg │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5171507Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5172382Z │ usr/local/lib/python3.12/site-packages/typing_extensions-4.16.0.dist-info/METAD- │ python-pkg │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5173072Z │ ATA                                                                              │            │                 │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5173775Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5174668Z │ usr/local/lib/python3.12/site-packages/typing_inspection-0.4.4.dist-info/METADA- │ python-pkg │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5175322Z │ TA                                                                               │            │                 │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5175929Z ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5176614Z │ usr/local/lib/python3.12/site-packages/uvicorn-0.54.0.dist-info/METADATA         │ python-pkg │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5177346Z └──────────────────────────────────────────────────────────────────────────────────┴────────────┴─────────────────┘
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5177726Z Legend:
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5177919Z - '-': Not scanned
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5178167Z - '0': Clean (no security findings detected)
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5178377Z 
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5178383Z 
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5178467Z Report Summary
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5178590Z 
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5178937Z ┌──────────────────────────────────────────────────────────────────────────────┬────────┬─────────────────┐
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5179489Z │                                    Target                                    │  Type  │ Vulnerabilities │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5180072Z ├──────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┤
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5180906Z │ ghcr.io/aj5831a/campusdesk-frontend:c85837a512e8bc1a9866396632e2da2bd9c2d787 │ alpine │        0        │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5181567Z │ (alpine 3.24.2)                                                              │        │                 │
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5182410Z └──────────────────────────────────────────────────────────────────────────────┴────────┴─────────────────┘
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5182794Z Legend:
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5182994Z - '-': Not scanned
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5183231Z - '0': Clean (no security findings detected)
+build-scan-publish	Scan both images with Trivy	2026-10-16T12:46:14.5183430Z 
+build-scan-publish	Preserve security reports	﻿2026-10-16T12:46:14.5269430Z ##[group]Run actions/upload-artifact@v4
+build-scan-publish	Preserve security reports	2026-10-16T12:46:14.5269795Z with:
+build-scan-publish	Preserve security reports	2026-10-16T12:46:14.5270050Z   name: trivy-c85837a512e8bc1a9866396632e2da2bd9c2d787
+build-scan-publish	Preserve security reports	2026-10-16T12:46:14.5270365Z   path: reports/
+build-scan-publish	Preserve security reports	2026-10-16T12:46:14.5270581Z   if-no-files-found: warn
+build-scan-publish	Preserve security reports	2026-10-16T12:46:14.5270818Z   compression-level: 6
+build-scan-publish	Preserve security reports	2026-10-16T12:46:14.5271042Z   overwrite: false
+build-scan-publish	Preserve security reports	2026-10-16T12:46:14.5271269Z   include-hidden-files: false
+build-scan-publish	Preserve security reports	2026-10-16T12:46:14.5271507Z env:
+build-scan-publish	Preserve security reports	2026-10-16T12:46:14.5271871Z   BACKEND_IMAGE: ghcr.io/aj5831a/campusdesk-backend:c85837a512e8bc1a9866396632e2da2bd9c2d787
+build-scan-publish	Preserve security reports	2026-10-16T12:46:14.5272731Z   FRONTEND_IMAGE: ghcr.io/aj5831a/campusdesk-frontend:c85837a512e8bc1a9866396632e2da2bd9c2d787
+build-scan-publish	Preserve security reports	2026-10-16T12:46:14.5273172Z ##[endgroup]
+build-scan-publish	Preserve security reports	2026-10-16T12:46:14.7057944Z (node:2990) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-scan-publish	Preserve security reports	2026-10-16T12:46:14.7058747Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-scan-publish	Preserve security reports	2026-10-16T12:46:14.7174732Z With the provided path, there will be 2 files uploaded
+build-scan-publish	Preserve security reports	2026-10-16T12:46:14.7176565Z Artifact name is valid!
+build-scan-publish	Preserve security reports	2026-10-16T12:46:14.7177102Z Root directory input is valid!
+build-scan-publish	Preserve security reports	2026-10-16T12:46:15.1094228Z Beginning upload of artifact content to blob storage
+build-scan-publish	Preserve security reports	2026-10-16T12:46:15.1323451Z (node:2990) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+build-scan-publish	Preserve security reports	2026-10-16T12:46:15.3940960Z Uploaded bytes 1326
+build-scan-publish	Preserve security reports	2026-10-16T12:46:15.4754724Z Finished uploading artifact content to blob storage!
+build-scan-publish	Preserve security reports	2026-10-16T12:46:15.4756376Z SHA256 digest of uploaded artifact zip is 90d09ff2ff2b53742eb56de8efe51c2a7eed0b06cb3bb31c715800573b267821
+build-scan-publish	Preserve security reports	2026-10-16T12:46:15.4757984Z Finalizing artifact upload
+build-scan-publish	Preserve security reports	2026-10-16T12:46:15.7553534Z Artifact trivy-c85837a512e8bc1a9866396632e2da2bd9c2d787.zip successfully finalized. Artifact ID 12046821956
+build-scan-publish	Preserve security reports	2026-10-16T12:46:15.7554983Z Artifact trivy-c85837a512e8bc1a9866396632e2da2bd9c2d787 has been successfully uploaded! Final size is 1326 bytes. Artifact ID is 12046821956
+build-scan-publish	Preserve security reports	2026-10-16T12:46:15.7561262Z Artifact download URL: https://github.com/AJ5831A/campusdesk-devsecops/actions/runs/38902732947/artifacts/12046821956
+build-scan-publish	Run helm/kind-action@v1.12.0	﻿2026-10-16T12:46:15.7741197Z ##[group]Run helm/kind-action@v1.12.0
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:15.7741527Z with:
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:15.7741741Z   cluster_name: resolvedesk-ci
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:15.7742349Z   version: v0.26.0
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:15.7742573Z   wait: 60s
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:15.7742767Z   verbosity: 0
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:15.7742981Z   kubectl_version: v1.31.4
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:15.7743215Z   registry: false
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:15.7743431Z   registry_image: registry:2
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:15.7743681Z   registry_name: kind-registry
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:15.7743932Z   registry_port: 5000
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:15.7744161Z   registry_enable_delete: false
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:15.7744413Z   ignore_failed_clean: false
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:15.7744643Z env:
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:15.7745024Z   BACKEND_IMAGE: ghcr.io/aj5831a/campusdesk-backend:c85837a512e8bc1a9866396632e2da2bd9c2d787
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:15.7745660Z   FRONTEND_IMAGE: ghcr.io/aj5831a/campusdesk-frontend:c85837a512e8bc1a9866396632e2da2bd9c2d787
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:15.7746096Z ##[endgroup]
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:15.8142252Z Installing kind...
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:15.8159884Z /opt/hostedtoolcache/kind/v0.26.0/amd64/kind/bin ~/work/campusdesk-devsecops/campusdesk-devsecops
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:16.4171750Z kind-linux-amd64: OK
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:16.4210964Z ~/work/campusdesk-devsecops/campusdesk-devsecops
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:16.4211505Z Adding kind directory to PATH...
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:16.4211908Z Installing kubectl...
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:16.5958710Z Adding kubectl directory to PATH...
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:16.5985144Z kind v0.26.0 go1.23.4 linux/amd64
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:16.6368321Z Client Version: v1.31.4
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:16.6370331Z Kustomize Version: v5.4.2
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:16.6384950Z Creating kind cluster...
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:16.8391245Z Creating cluster "resolvedesk-ci" ...
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:16.8392587Z  • Ensuring node image (kindest/node:v1.32.0) 🖼  ...
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:26.6682381Z  ✓ Ensuring node image (kindest/node:v1.32.0) 🖼
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:26.6683182Z  • Preparing nodes 📦   ...
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:28.5779637Z  ✓ Preparing nodes 📦 
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:28.6100943Z  • Writing configuration 📜  ...
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:28.8086851Z  ✓ Writing configuration 📜
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:28.8087518Z  • Starting control-plane 🕹️  ...
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:39.0435421Z  ✓ Starting control-plane 🕹️
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:39.0435853Z  • Installing CNI 🔌  ...
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:39.3798781Z  ✓ Installing CNI 🔌
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:39.3799459Z  • Installing StorageClass 💾  ...
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:39.7453626Z  ✓ Installing StorageClass 💾
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:39.7746803Z  • Waiting ≤ 1m0s for control-plane = Ready ⏳  ...
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:57.3573245Z  ✓ Waiting ≤ 1m0s for control-plane = Ready ⏳
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:57.3575510Z  • Ready after 18s 💚
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:57.5190416Z Set kubectl context to "kind-resolvedesk-ci"
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:57.5191248Z You can now use your cluster with:
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:57.5191460Z 
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:57.5191621Z kubectl cluster-info --context kind-resolvedesk-ci
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:57.5191867Z 
+build-scan-publish	Run helm/kind-action@v1.12.0	2026-10-16T12:46:57.5192918Z Not sure what to do next? 😅  Check out https://kind.sigs.k8s.io/docs/user/quick-start/
+build-scan-publish	Run azure/setup-helm@v4.3.0	﻿2026-10-16T12:46:57.5302801Z ##[group]Run azure/setup-helm@v4.3.0
+build-scan-publish	Run azure/setup-helm@v4.3.0	2026-10-16T12:46:57.5303347Z with:
+build-scan-publish	Run azure/setup-helm@v4.3.0	2026-10-16T12:46:57.5303701Z   version: latest
+build-scan-publish	Run azure/setup-helm@v4.3.0	2026-10-16T12:46:57.5307566Z   token: ***
+build-scan-publish	Run azure/setup-helm@v4.3.0	2026-10-16T12:46:57.5308016Z   downloadBaseURL: https://get.helm.sh
+build-scan-publish	Run azure/setup-helm@v4.3.0	2026-10-16T12:46:57.5308529Z env:
+build-scan-publish	Run azure/setup-helm@v4.3.0	2026-10-16T12:46:57.5309205Z   BACKEND_IMAGE: ghcr.io/aj5831a/campusdesk-backend:c85837a512e8bc1a9866396632e2da2bd9c2d787
+build-scan-publish	Run azure/setup-helm@v4.3.0	2026-10-16T12:46:57.5310300Z   FRONTEND_IMAGE: ghcr.io/aj5831a/campusdesk-frontend:c85837a512e8bc1a9866396632e2da2bd9c2d787
+build-scan-publish	Run azure/setup-helm@v4.3.0	2026-10-16T12:46:57.5311124Z ##[endgroup]
+build-scan-publish	Run azure/setup-helm@v4.3.0	2026-10-16T12:46:57.8810026Z ##[group]Installing v4.3.1
+build-scan-publish	Run azure/setup-helm@v4.3.0	2026-10-16T12:46:57.8819102Z Downloading 'v4.3.1' from 'https://get.helm.sh'
+build-scan-publish	Run azure/setup-helm@v4.3.0	2026-10-16T12:46:58.1012429Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/ab69b025-b91f-47fd-a6e5-0f5132d5b53f -f /home/runner/work/_temp/b29b08b2-a1e8-46b1-98da-cb51db9826cf
+build-scan-publish	Run azure/setup-helm@v4.3.0	2026-10-16T12:46:58.7352702Z ##[endgroup]
+build-scan-publish	Run azure/setup-helm@v4.3.0	2026-10-16T12:46:58.7355421Z Helm tool version 'v4.3.1' has been cached at /opt/hostedtoolcache/helm/4.3.1/x64/linux-amd64/helm
+build-scan-publish	Load scanned images into Kubernetes	﻿2026-10-16T12:46:58.7558557Z ##[group]Run kind load docker-image "$BACKEND_IMAGE" "$FRONTEND_IMAGE" --name resolvedesk-ci
+build-scan-publish	Load scanned images into Kubernetes	2026-10-16T12:46:58.7559737Z ^[[36;1mkind load docker-image "$BACKEND_IMAGE" "$FRONTEND_IMAGE" --name resolvedesk-ci^[[0m
+build-scan-publish	Load scanned images into Kubernetes	2026-10-16T12:46:58.7651815Z shell: /usr/bin/bash -e {0}
+build-scan-publish	Load scanned images into Kubernetes	2026-10-16T12:46:58.7652627Z env:
+build-scan-publish	Load scanned images into Kubernetes	2026-10-16T12:46:58.7653267Z   BACKEND_IMAGE: ghcr.io/aj5831a/campusdesk-backend:c85837a512e8bc1a9866396632e2da2bd9c2d787
+build-scan-publish	Load scanned images into Kubernetes	2026-10-16T12:46:58.7654367Z   FRONTEND_IMAGE: ghcr.io/aj5831a/campusdesk-frontend:c85837a512e8bc1a9866396632e2da2bd9c2d787
+build-scan-publish	Load scanned images into Kubernetes	2026-10-16T12:46:58.7655161Z ##[endgroup]
+build-scan-publish	Load scanned images into Kubernetes	2026-10-16T12:46:59.1319680Z Image: "ghcr.io/aj5831a/campusdesk-backend:c85837a512e8bc1a9866396632e2da2bd9c2d787" with ID "sha256:f0e86b2531151a5fa3994ac47d4bca93ae7a6bd4f87b2c98d648be94f05b0d82" not yet present on node "resolvedesk-ci-control-plane", loading...
+build-scan-publish	Load scanned images into Kubernetes	2026-10-16T12:46:59.3246697Z Image: "ghcr.io/aj5831a/campusdesk-frontend:c85837a512e8bc1a9866396632e2da2bd9c2d787" with ID "sha256:3531ca29dc3f0bd712f4540361e432436ec19d98c7d83a051ab8a0fc00c79740" not yet present on node "resolvedesk-ci-control-plane", loading...
+build-scan-publish	Deploy with Helm	﻿2026-10-16T12:47:03.8631000Z ##[group]Run kubectl apply -f k8s/namespace.yaml
+build-scan-publish	Deploy with Helm	2026-10-16T12:47:03.8631453Z ^[[36;1mkubectl apply -f k8s/namespace.yaml^[[0m
+build-scan-publish	Deploy with Helm	2026-10-16T12:47:03.8631794Z ^[[36;1mpassword=$(openssl rand -hex 24)^[[0m
+build-scan-publish	Deploy with Helm	2026-10-16T12:47:03.8633756Z ^[[36;1mkubectl create secret generic resolvedesk-database -n campusdesk --from-literal=username=resolvedesk --from-literal=*** --from-literal=DATABASE_URL="***resolvedesk-postgres:5432/resolvedesk"^[[0m
+build-scan-publish	Deploy with Helm	2026-10-16T12:47:03.8635483Z ^[[36;1mhelm upgrade --install resolvedesk ./helm/resolvedesk -n campusdesk --wait --wait-for-jobs --timeout 5m --set backend.image="${BACKEND_IMAGE%:*}" --set backend.tag="$GITHUB_SHA" --set frontend.image="${FRONTEND_IMAGE%:*}" --set frontend.tag="$GITHUB_SHA" --set hpa.enabled=false^[[0m
+build-scan-publish	Deploy with Helm	2026-10-16T12:47:03.8702289Z shell: /usr/bin/bash -e {0}
+build-scan-publish	Deploy with Helm	2026-10-16T12:47:03.8702610Z env:
+build-scan-publish	Deploy with Helm	2026-10-16T12:47:03.8703037Z   BACKEND_IMAGE: ghcr.io/aj5831a/campusdesk-backend:c85837a512e8bc1a9866396632e2da2bd9c2d787
+build-scan-publish	Deploy with Helm	2026-10-16T12:47:03.8703770Z   FRONTEND_IMAGE: ghcr.io/aj5831a/campusdesk-frontend:c85837a512e8bc1a9866396632e2da2bd9c2d787
+build-scan-publish	Deploy with Helm	2026-10-16T12:47:03.8704345Z ##[endgroup]
+build-scan-publish	Deploy with Helm	2026-10-16T12:47:03.9916227Z namespace/campusdesk created
+build-scan-publish	Deploy with Helm	2026-10-16T12:47:04.0493741Z secret/resolvedesk-database created
+build-scan-publish	Deploy with Helm	2026-10-16T12:47:04.0951493Z Release "resolvedesk" does not exist. Installing it now.
+build-scan-publish	Deploy with Helm	2026-10-16T12:47:42.6641599Z NAME: resolvedesk
+build-scan-publish	Deploy with Helm	2026-10-16T12:47:42.6645195Z LAST DEPLOYED: Fri Oct 16 12:47:04 2026
+build-scan-publish	Deploy with Helm	2026-10-16T12:47:42.6645777Z NAMESPACE: campusdesk
+build-scan-publish	Deploy with Helm	2026-10-16T12:47:42.6646480Z STATUS: deployed
+build-scan-publish	Deploy with Helm	2026-10-16T12:47:42.6646834Z REVISION: 1
+build-scan-publish	Deploy with Helm	2026-10-16T12:47:42.6647186Z DESCRIPTION: Install complete
+build-scan-publish	Deploy with Helm	2026-10-16T12:47:42.6647620Z TEST SUITE: None
+build-scan-publish	Smoke test deployed application	﻿2026-10-16T12:47:42.6682489Z ##[group]Run kubectl get pods,services -n campusdesk
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.6683146Z ^[[36;1mkubectl get pods,services -n campusdesk^[[0m
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.6683925Z ^[[36;1mkubectl port-forward -n campusdesk service/resolvedesk-frontend 3000:80 > /tmp/port-forward.log 2>&1 &^[[0m
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.6684620Z ^[[36;1mforward_pid=$!^[[0m
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.6685079Z ^[[36;1mtrap 'kill "$forward_pid"' EXIT^[[0m
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.6685688Z ^[[36;1mcurl --retry 20 --retry-delay 2 --retry-connrefused --fail http://localhost:3000/health^[[0m
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.6686321Z ^[[36;1mcurl --fail http://localhost:3000/api/tickets^[[0m
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.6751350Z shell: /usr/bin/bash -e {0}
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.6752088Z env:
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.6752818Z   BACKEND_IMAGE: ghcr.io/aj5831a/campusdesk-backend:c85837a512e8bc1a9866396632e2da2bd9c2d787
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.6753684Z   FRONTEND_IMAGE: ghcr.io/aj5831a/campusdesk-frontend:c85837a512e8bc1a9866396632e2da2bd9c2d787
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.6754318Z ##[endgroup]
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.7619421Z NAME                                         READY   STATUS      RESTARTS   AGE
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.7620567Z pod/resolvedesk-backend-74c7ff7c86-8j58g     1/1     Running     0          38s
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.7621785Z pod/resolvedesk-backend-74c7ff7c86-f58x2     1/1     Running     0          38s
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.7623199Z pod/resolvedesk-frontend-86b8d87b8f-f574n    1/1     Running     0          38s
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.7624368Z pod/resolvedesk-frontend-86b8d87b8f-gwzzk    1/1     Running     0          38s
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.7625393Z pod/resolvedesk-migrate-2caf3b243cae-qvsl7   0/1     Completed   2          38s
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.7626419Z pod/resolvedesk-postgres-0                   1/1     Running     0          38s
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.7627051Z 
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.7627462Z NAME                           TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.7628485Z service/resolvedesk-backend    ClusterIP   10.96.102.68    <none>        8000/TCP   38s
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.7629689Z service/resolvedesk-frontend   ClusterIP   10.96.137.181   <none>        80/TCP     38s
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.7630832Z service/resolvedesk-postgres   ClusterIP   10.96.191.70    <none>        5432/TCP   38s
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.7713341Z   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.7720971Z                                  Dload  Upload   Total   Spent    Left  Speed
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.7721864Z 
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.7722809Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.7724377Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.7725644Z curl: (7) Failed to connect to localhost port 3000 after 0 ms: Couldn't connect to server
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.7727254Z Warning: Problem : connection refused. Will retry in 2 seconds. 20 retries 
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:42.7728310Z Warning: left.
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:44.7727194Z 
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:44.7772645Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:44.7773729Z 100    15  100    15    0     0   3335      0 --:--:-- --:--:-- --:--:--  3750
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:44.7837992Z   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:44.7839502Z                                  Dload  Upload   Total   Spent    Left  Speed
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:44.7840504Z 
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:44.7946113Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:44.7947672Z 100     2  100     2    0     0    184      0 --:--:-- --:--:-- --:--:--   200
+build-scan-publish	Smoke test deployed application	2026-10-16T12:47:44.7959604Z {"status":"ok"}[]
+build-scan-publish	Log in to GHCR	﻿2026-10-16T12:47:44.8066271Z ##[group]Run docker/login-action@v3
+build-scan-publish	Log in to GHCR	2026-10-16T12:47:44.8066578Z with:
+build-scan-publish	Log in to GHCR	2026-10-16T12:47:44.8066786Z   registry: ghcr.io
+build-scan-publish	Log in to GHCR	2026-10-16T12:47:44.8067206Z   username: AJ5831A
+build-scan-publish	Log in to GHCR	2026-10-16T12:47:44.8069548Z   password: ***
+build-scan-publish	Log in to GHCR	2026-10-16T12:47:44.8069785Z   logout: true
+build-scan-publish	Log in to GHCR	2026-10-16T12:47:44.8069991Z env:
+build-scan-publish	Log in to GHCR	2026-10-16T12:47:44.8070367Z   BACKEND_IMAGE: ghcr.io/aj5831a/campusdesk-backend:c85837a512e8bc1a9866396632e2da2bd9c2d787
+build-scan-publish	Log in to GHCR	2026-10-16T12:47:44.8070999Z   FRONTEND_IMAGE: ghcr.io/aj5831a/campusdesk-frontend:c85837a512e8bc1a9866396632e2da2bd9c2d787
+build-scan-publish	Log in to GHCR	2026-10-16T12:47:44.8071452Z ##[endgroup]
+build-scan-publish	Log in to GHCR	2026-10-16T12:47:45.1400272Z Logging into ghcr.io...
+build-scan-publish	Log in to GHCR	2026-10-16T12:47:45.1426484Z (node:13886) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-scan-publish	Log in to GHCR	2026-10-16T12:47:45.1427796Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-scan-publish	Log in to GHCR	2026-10-16T12:47:45.5864278Z Login Succeeded!
+build-scan-publish	Publish tested and scanned images	﻿2026-10-16T12:47:45.6008162Z ##[group]Run docker push "$BACKEND_IMAGE"
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:45.6008558Z ^[[36;1mdocker push "$BACKEND_IMAGE"^[[0m
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:45.6008869Z ^[[36;1mdocker push "$FRONTEND_IMAGE"^[[0m
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:45.6073665Z shell: /usr/bin/bash -e {0}
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:45.6073970Z env:
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:45.6074409Z   BACKEND_IMAGE: ghcr.io/aj5831a/campusdesk-backend:c85837a512e8bc1a9866396632e2da2bd9c2d787
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:45.6075140Z   FRONTEND_IMAGE: ghcr.io/aj5831a/campusdesk-frontend:c85837a512e8bc1a9866396632e2da2bd9c2d787
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:45.6075651Z ##[endgroup]
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:45.6487869Z The push refers to repository [ghcr.io/aj5831a/campusdesk-backend]
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:45.7724522Z 10ec469a8af7: Preparing
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:45.7725031Z 1859958070af: Preparing
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:45.7725412Z 6286e133bafa: Preparing
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:45.7726412Z da4e37767c67: Preparing
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:45.7726853Z 03f3c913e564: Preparing
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:45.7727192Z d3f00cd85fa6: Preparing
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:45.7727451Z 4d211c3f1c45: Preparing
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:45.7728092Z 7e9021171c27: Preparing
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:45.7728485Z 41366f7f4879: Preparing
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:45.7730833Z 74d97c428c51: Preparing
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:45.7731361Z d3f00cd85fa6: Waiting
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:45.7731935Z 4d211c3f1c45: Waiting
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:45.7732324Z 7e9021171c27: Waiting
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:45.7732717Z 41366f7f4879: Waiting
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:45.7733198Z 74d97c428c51: Waiting
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:47.5651243Z 03f3c913e564: Pushed
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:47.5933905Z 1859958070af: Pushed
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:47.6317920Z 10ec469a8af7: Pushed
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:47.6804457Z 6286e133bafa: Pushed
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:47.7263459Z 4d211c3f1c45: Layer already exists
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:47.7634723Z 7e9021171c27: Layer already exists
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:47.8205254Z 41366f7f4879: Layer already exists
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:47.8565034Z 74d97c428c51: Layer already exists
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:48.5374506Z d3f00cd85fa6: Pushed
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:50.1576046Z da4e37767c67: Pushed
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:52.3875319Z c85837a512e8bc1a9866396632e2da2bd9c2d787: digest: sha256:f4b047d76a9732b9c4aae684be3fbc02c24bc9cd6f774696709342fd3eec4592 size: 2405
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:52.4158607Z The push refers to repository [ghcr.io/aj5831a/campusdesk-frontend]
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:52.5310639Z 9d77575359a1: Preparing
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:52.5311776Z 152df9b6f6cf: Preparing
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:52.5312663Z 46c425251b66: Preparing
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:52.5313192Z 3c892ead291b: Preparing
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:52.5313705Z cb09ecf50119: Preparing
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:52.5314236Z be8ef9e29ff8: Preparing
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:52.5314664Z 16b7c6f49eb2: Preparing
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:52.5315221Z ad50fc9f4d5b: Preparing
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:52.5315543Z cfdd095735fd: Preparing
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:52.5315863Z 74d97c428c51: Preparing
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:52.5316168Z be8ef9e29ff8: Waiting
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:52.5316478Z 16b7c6f49eb2: Waiting
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:52.5316775Z ad50fc9f4d5b: Waiting
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:52.5317075Z cfdd095735fd: Waiting
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:52.5317367Z 74d97c428c51: Waiting
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:52.8340513Z cb09ecf50119: Layer already exists
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:52.8355961Z 3c892ead291b: Layer already exists
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:52.8369343Z 46c425251b66: Layer already exists
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:52.9653320Z be8ef9e29ff8: Layer already exists
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:52.9705767Z ad50fc9f4d5b: Layer already exists
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:52.9721828Z 16b7c6f49eb2: Layer already exists
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:53.0987237Z cfdd095735fd: Layer already exists
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:53.1001567Z 74d97c428c51: Layer already exists
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:54.3589180Z 9d77575359a1: Pushed
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:54.4124370Z 152df9b6f6cf: Pushed
+build-scan-publish	Publish tested and scanned images	2026-10-16T12:47:56.8313027Z c85837a512e8bc1a9866396632e2da2bd9c2d787: digest: sha256:39656063d7a75443bd8f8d78317f7c535d653e9b94bfb67c03bb91161038a182 size: 2405
+build-scan-publish	Post Log in to GHCR	﻿2026-10-16T12:47:56.8410777Z Post job cleanup.
+build-scan-publish	Post Log in to GHCR	2026-10-16T12:47:57.1779738Z ##[group]Logout from ghcr.io
+build-scan-publish	Post Log in to GHCR	2026-10-16T12:47:57.1802837Z (node:13968) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-scan-publish	Post Log in to GHCR	2026-10-16T12:47:57.1804001Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-scan-publish	Post Log in to GHCR	2026-10-16T12:47:57.1836990Z [command]/usr/bin/docker logout ghcr.io
+build-scan-publish	Post Log in to GHCR	2026-10-16T12:47:57.1999615Z Removing login credentials for ghcr.io
+build-scan-publish	Post Log in to GHCR	2026-10-16T12:47:57.2038102Z ##[endgroup]
+build-scan-publish	Post Log in to GHCR	2026-10-16T12:47:57.2038814Z ##[group]Post cache
+build-scan-publish	Post Log in to GHCR	2026-10-16T12:47:57.2040419Z State not set
+build-scan-publish	Post Log in to GHCR	2026-10-16T12:47:57.2041301Z ##[endgroup]
+build-scan-publish	Post Run helm/kind-action@v1.12.0	﻿2026-10-16T12:47:57.2239735Z Post job cleanup.
+build-scan-publish	Post Run helm/kind-action@v1.12.0	2026-10-16T12:47:57.2785964Z Error response from daemon: No such container: kind-registry
+build-scan-publish	Post Run helm/kind-action@v1.12.0	2026-10-16T12:47:57.2939309Z Deleting cluster "resolvedesk-ci" ...
+build-scan-publish	Post Run helm/kind-action@v1.12.0	2026-10-16T12:47:59.1777175Z Deleted nodes: ["resolvedesk-ci-control-plane"]
+build-scan-publish	Post Run actions/checkout@v4	﻿2026-10-16T12:47:59.1897494Z Post job cleanup.
+build-scan-publish	Post Run actions/checkout@v4	2026-10-16T12:47:59.2848802Z [command]/usr/bin/git version
+build-scan-publish	Post Run actions/checkout@v4	2026-10-16T12:47:59.2901434Z git version 2.55.0
+build-scan-publish	Post Run actions/checkout@v4	2026-10-16T12:47:59.2949587Z Temporarily overriding HOME='/home/runner/work/_temp/1d4ca064-6c5a-4db6-8bd9-3d7360f81070' before making global git config changes
+build-scan-publish	Post Run actions/checkout@v4	2026-10-16T12:47:59.2951255Z Adding repository directory to the temporary git global config as a safe directory
+build-scan-publish	Post Run actions/checkout@v4	2026-10-16T12:47:59.2957790Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/campusdesk-devsecops/campusdesk-devsecops
+build-scan-publish	Post Run actions/checkout@v4	2026-10-16T12:47:59.3008602Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-scan-publish	Post Run actions/checkout@v4	2026-10-16T12:47:59.3060493Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-scan-publish	Post Run actions/checkout@v4	2026-10-16T12:47:59.3351230Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-scan-publish	Post Run actions/checkout@v4	2026-10-16T12:47:59.3403130Z http.https://github.com/.extraheader
+build-scan-publish	Post Run actions/checkout@v4	2026-10-16T12:47:59.3406098Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build-scan-publish	Post Run actions/checkout@v4	2026-10-16T12:47:59.3445013Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-scan-publish	Post Run actions/checkout@v4	2026-10-16T12:47:59.3719873Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-scan-publish	Post Run actions/checkout@v4	2026-10-16T12:47:59.3765978Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-scan-publish	Complete job	﻿2026-10-16T12:47:59.4184856Z Cleaning up orphan processes
+build-scan-publish	Complete job	2026-10-16T12:47:59.4655037Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4, azure/setup-helm@v4.3.0, docker/login-action@v3, helm/kind-action@v1.12.0. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
