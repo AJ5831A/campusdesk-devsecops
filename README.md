@@ -105,7 +105,7 @@ Application and scanner base images are digest pinned. Python dependencies and n
 
 ## AWS infrastructure
 
-See [terraform/README.md](terraform/README.md) for setup, plan, apply and destroy. Terraform provisions a VPC, two public and two private subnets, a NAT gateway, EKS, managed worker nodes, and EBS CSI permissions. The Kubernetes API is restricted to the operator's explicit IP range. The example uses ap-south-1.
+See [terraform/README.md](terraform/README.md) for setup, plan, apply and destroy. Terraform provisions a shared VPC, EKS, managed worker nodes and EBS CSI permissions. The account Elastic IP quota blocked NAT creation, so the approved temporary deployment uses public-subnet workers with public IPs, no NAT gateway, no public inbound security-group access and a Kubernetes API restricted to the operator /32. The Kubernetes API is restricted to the operator's explicit IP range. The example uses ap-south-1.
 
 AWS infrastructure costs money while it exists. The capstone deployment is temporary; its final creation and teardown evidence is recorded in [demo](demo/). Terraform state, saved plans, credentials and real variable files must remain local.
 

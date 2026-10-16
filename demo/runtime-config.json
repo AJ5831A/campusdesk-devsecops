@@ -1,0 +1,124 @@
+{
+  "voice": "Samantha",
+  "browser_args": [
+    "--host-resolver-rules=MAP campusdesk.local 127.0.0.1"
+  ],
+  "storage_state": "/tmp/resolvedesk-recording-auth.json",
+  "scenes": [
+    {
+      "ci_repo": "AJ5831A/campusdesk-devsecops",
+      "narration": "I am pushing the prepared final documentation and infrastructure recovery changes now. This is a new commit, so GitHub Actions starts a fresh pipeline. The recording remains on the actual run until tests, image scanning, Kubernetes deployment and publication finish successfully."
+    },
+    {
+      "url": "https://github.com/AJ5831A/campusdesk-devsecops/tree/main/backend/app",
+      "narration": "The backend separates routes, services, schemas and models. Pydantic validates campus category and required location. Alembic owns schema changes, and an init process waits for the expected migration before API replicas start."
+    },
+    {
+      "url": "http://campusdesk.local:8088",
+      "narration": "This is CampusDesk served through the shared EKS ingress. Its resources live in the campusdesk namespace, with a separate database and credentials. The application shares the credited ResolveDesk foundation and adds required campus location and IT categories."
+    },
+    {
+      "actions": [
+        {
+          "selector": "button:has-text(\"New ticket\")",
+          "type": "click"
+        },
+        {
+          "selector": "input[name=subject]",
+          "type": "fill",
+          "value": "Campus walkthrough network check"
+        },
+        {
+          "selector": "input[name=requester_email]",
+          "type": "fill",
+          "value": "demo@example.com"
+        },
+        {
+          "selector": "input[name=location]",
+          "type": "fill",
+          "value": "Science block, Lab 301"
+        },
+        {
+          "selector": "select[name=category]",
+          "type": "select",
+          "value": "NETWORK"
+        },
+        {
+          "selector": "select[name=priority]",
+          "type": "select",
+          "value": "HIGH"
+        }
+      ],
+      "narration": "I am creating a network incident for the Science block, Lab three hundred and one. Campus location is required. The category helps route the issue to the right support team. No external email is sent."
+    },
+    {
+      "actions": [
+        {
+          "selector": "button:has-text(\"Create ticket\")",
+          "type": "click"
+        },
+        {
+          "selector": ".ticket-link:has-text(\"Campus walkthrough network check\")",
+          "type": "wait"
+        }
+      ],
+      "narration": "The new ticket is validated and stored in PostgreSQL. The queue shows its campus location, category, priority and status. Automated browser checks also exercised category changes, location search and deletion."
+    },
+    {
+      "command": [
+        "env",
+        "AWS_PROFILE=resolvedesk-capstone",
+        "KUBECONFIG=/tmp/resolvedesk-eks-kubeconfig",
+        "kubectl",
+        "get",
+        "pods,services,ingress,pvc",
+        "-n",
+        "campusdesk"
+      ],
+      "title": "CampusDesk live Kubernetes resources",
+      "narration": "These are live Kubernetes resources in the campusdesk namespace. Pods and services belong to the same Helm release name used in the separate namespace. The persistent volume claim stores this application database independently."
+    },
+    {
+      "command": [
+        "tail",
+        "-n",
+        "28",
+        "/Users/dibyochakraborty/campusdesk-devsecops/demo/evidence/shared-terraform-apply.log"
+      ],
+      "title": "Shared Terraform apply output",
+      "narration": "This is recorded output from the shared Terraform apply. The initial NAT design encountered an account Elastic IP quota. The approved temporary recovery uses public-subnet worker nodes, no NAT gateway, no public inbound security-group access and an API restricted to the operator address."
+    },
+    {
+      "image": "/Users/dibyochakraborty/campusdesk-devsecops/demo/evidence/shared-aws-vpc-console.png",
+      "narration": "This is an actual authenticated AWS Console capture of the shared VPC. It is shared evidence for one cluster, not a claim that CampusDesk created a second infrastructure deployment."
+    },
+    {
+      "image": "/Users/dibyochakraborty/campusdesk-devsecops/demo/evidence/shared-aws-eks-console.png",
+      "narration": "The shared EKS cluster is active in this actual AWS Console capture. Namespace isolation keeps CampusDesk application storage and credentials separate from ResolveDesk while both reuse the temporary cluster."
+    },
+    {
+      "url": "http://127.0.0.1:8089/applications/argocd/campusdesk",
+      "narration": "ArgoCD reads the CampusDesk Helm chart and release values from Git. The desired images use a previously tested commit SHA. Synced and Healthy states confirm that the cluster has reconciled the recorded Git release."
+    },
+    {
+      "url": "http://127.0.0.1:9090/targets",
+      "narration": "Prometheus discovers the CampusDesk API through its ServiceMonitor. The live target must be up. This confirms that metrics scraping is working, beyond simply installing a dashboard configuration."
+    },
+    {
+      "url": "http://127.0.0.1:3001/d/campusdesk/campusdesk-api",
+      "narration": "The CampusDesk dashboard uses its own namespace selector. It shows actual request rate, latency and errors after generated traffic. A zero server-error rate is a valid result. These metrics come from the running API."
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "/Users/dibyochakraborty/campusdesk-devsecops",
+        "log",
+        "--oneline",
+        "-14"
+      ],
+      "title": "Independent CampusDesk development history",
+      "narration": "The repository records its own meaningful commits and credits the shared foundation. Implementation was assisted by an AI coding agent. This video uses a synthetic voice over real captured evidence. Final cleanup evidence is documented separately after both application demonstrations finish."
+    }
+  ]
+}

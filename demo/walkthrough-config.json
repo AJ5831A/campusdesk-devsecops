@@ -1,0 +1,109 @@
+{
+  "voice": "Samantha",
+  "scenes": [
+    {
+      "image": "/tmp/campus-slides/slide-01.png",
+      "narration": "This is CampusDesk, prepared for Aryan, A J 5 8 3 1 A. This walkthrough uses a synthetic narrator and actual captured application and deployment evidence. The implementation shares the credited ResolveDesk foundation. CampusDesk. Create, assign, prioritize and resolve support tickets. React interface, FastAPI services and persistent PostgreSQL storage. Prepared for Aryan (AJ5831A). Shared ResolveDesk foundation is credited; campus fields add a distinct workflow."
+    },
+    {
+      "image": "/tmp/campus-slides/slide-02.png",
+      "narration": "A small workflow, implemented end to end. Requester email, category and required campus location stay with each ticket. The workflow is OPEN \u2192 IN_PROGRESS \u2192 RESOLVED; teams can reopen tickets. Search and filters help triage; summary counts expose unresolved urgent work. Assumption: an internal classroom demonstration with synthetic data and no authentication."
+    },
+    {
+      "image": "/tmp/campus-slides/slide-03.png",
+      "narration": "Separate responsibilities. React + Vite: ticket workspace, forms and accessible feedback. FastAPI: HTTP routes; service functions: workflow operations; Pydantic: validation. SQLAlchemy + PostgreSQL: storage. Alembic: explicit schema migrations. Docker Compose: local integration. Helm + Kubernetes: repeatable deployment."
+    },
+    {
+      "image": "/tmp/campus-slides/slide-04.png",
+      "narration": "One application, two delivery paths. Local: Compose connects the same three application services. AWS: Terraform creates the VPC and EKS; Helm defines the workload."
+    },
+    {
+      "image": "/tmp/campus-slides/slide-05.png",
+      "narration": "Test before publication. GitHub Actions runs backend tests, frontend tests and a production frontend build. Build each image once and tag it with the source commit SHA. Trivy blocks HIGH and CRITICAL findings and preserves scan reports. Deploy scanned images to temporary Kind, smoke-test them, then publish to GHCR."
+    },
+    {
+      "image": "/tmp/campus-slides/slide-06.png",
+      "narration": "Make infrastructure reproducible. Shared VPC spans two availability zones; CampusDesk has its own Kubernetes namespace. Temporary EKS workers use public subnets after the account Elastic IP quota blocked NAT creation. Security groups permit no public inbound access; the Kubernetes API is limited to the operator /32. EBS CSI receives a dedicated IAM role for persistent volumes. Capture the recovery and deployment proof, then destroy the shared temporary resources."
+    },
+    {
+      "image": "/tmp/campus-slides/slide-07.png",
+      "narration": "Deploy and recover predictably. Frontend and backend Deployments use probes, resource requests and limits. A database StatefulSet uses persistent storage; credentials come from a Secret. A migration Job applies Alembic before the application is considered ready. HPA adjusts backend replicas; an Ingress can provide a single application endpoint. Runtime evidence must show the actual pods, services, storage and health state."
+    },
+    {
+      "image": "/tmp/campus-slides/slide-08.png",
+      "narration": "Git records the desired release. ArgoCD reads the Helm chart and release values from Git. Commit-SHA image tags connect a deployed release to its tested source. A values change updates the desired state; ArgoCD reconciles the cluster. Show Synced and Healthy states, then demonstrate a controlled release update. A configured Application alone is not proof of a successful synchronization."
+    },
+    {
+      "image": "/tmp/campus-slides/slide-09.png",
+      "narration": "Observe behavior, not just containers. /health reports process liveness; /ready checks access to the migrated database. /metrics exposes HTTP request counts, duration and status metrics. A ServiceMonitor connects the API to Prometheus; verify its target is UP. Grafana displays request rate, p95 latency and server errors. Generate traffic and allow scrape intervals before recording the dashboard."
+    },
+    {
+      "image": "/tmp/campus-slides/slide-10.png",
+      "narration": "Evidence and lessons. Verified: 31 isolated backend tests, including validation, CRUD, readiness and migration waiting. Campus variant adds category and location validation, search, forms and a dedicated migration. Local PostgreSQL CRUD and restart persistence passed. Cloud runtime evidence is recorded separately. Keep test results, deployed state and teardown proof separate; none implies the others. The demo has no authentication and uses a single PostgreSQL instance; production needs access control and a recovery plan."
+    },
+    {
+      "url": "http://localhost:3002",
+      "narration": "This is the running CampusDesk application. Each request records a campus location and an IT category. The queue supports search, status changes, assignment and deletion. All visible tickets use synthetic demonstration data."
+    },
+    {
+      "url": "http://localhost:3002",
+      "actions": [
+        {
+          "selector": "button:has-text(\"New ticket\")",
+          "type": "click"
+        },
+        {
+          "selector": "input[name=subject]",
+          "type": "fill",
+          "value": "Campus walkthrough network check"
+        },
+        {
+          "selector": "input[name=requester_email]",
+          "type": "fill",
+          "value": "demo@example.com"
+        },
+        {
+          "selector": "input[name=location]",
+          "type": "fill",
+          "value": "Science block, Lab 301"
+        },
+        {
+          "selector": "select[name=category]",
+          "type": "select",
+          "value": "NETWORK"
+        },
+        {
+          "selector": "select[name=priority]",
+          "type": "select",
+          "value": "HIGH"
+        }
+      ],
+      "narration": "I am recording a network incident at the Science block, Lab three hundred and one. Campus location is required, while category distinguishes hardware, software, network and account issues. These fields are also searchable from the queue."
+    },
+    {
+      "actions": [
+        {
+          "selector": "button:has-text(\"Create ticket\")",
+          "type": "click"
+        }
+      ],
+      "narration": "The API validates the form and persists the ticket in PostgreSQL. The local integration smoke test checked create, read, update, search, statistics and deletion. A generated ticket also survived a restart of both PostgreSQL and the API."
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "/Users/dibyochakraborty/campusdesk-devsecops",
+        "log",
+        "--oneline",
+        "-12"
+      ],
+      "title": "CampusDesk development history",
+      "narration": "The repository has a separate commit history, grouped by implementation responsibility. Documentation credits the shared foundation and AI assistance. Commits retain the actual configured operator identity."
+    },
+    {
+      "url": "https://github.com/AJ5831A/campusdesk-devsecops/actions/runs/38900823423",
+      "narration": "This is the completed GitHub Actions run for the first release. It ran backend and frontend tests, built the application images, enforced the vulnerability gate, deployed to temporary Kubernetes, smoke tested the result and published the same images to the container registry."
+    }
+  ]
+}

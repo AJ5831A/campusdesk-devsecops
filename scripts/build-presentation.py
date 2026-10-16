@@ -87,7 +87,7 @@ def build():
                 True,
             )
             text(point, 1.3, start + point_index * 0.79, 11.1, 0.79, 20)
-        text("RESOLVEDESK  /  DEVSECOPS PROJECT", 0.7, 7.0, 10, 0.3, 10, GRAY)
+        text("CAMPUSDESK  /  DEVSECOPS PROJECT", 0.7, 7.0, 10, 0.3, 10, GRAY)
         text(f"{index:02d}", 12.0, 7.0, 0.6, 0.3, 10, GRAY)
         pdf.showPage()
     deck.save(ROOT / "demo/presentation.pptx")
